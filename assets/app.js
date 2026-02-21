@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // 1. Fetch Data
     let dashboardData;
     try {
-        const response = await fetch('../data/ga_data.json');
+        const response = await fetch('data/ga_data.json');
         if (!response.ok) throw new Error('Data file not found');
         dashboardData = await response.json();
     } catch (error) {
