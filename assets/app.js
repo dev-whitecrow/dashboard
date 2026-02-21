@@ -11,8 +11,18 @@ document.addEventListener('DOMContentLoaded', async () => {
         dashboardData = {
             "last_updated": new Date().toISOString(),
             "ab_test": {
-                "A": { "views": 1500, "scroll_75": 450, "clicks": 180, "avg_session_duration": 120 },
-                "B": { "views": 1450, "scroll_75": 600, "clicks": 290, "avg_session_duration": 150 }
+                "A": {
+                    "views": 1500,
+                    "scroll_25": 1200, "scroll_50": 900, "scroll_75": 450, "scroll_100": 200,
+                    "clicks": 180,
+                    "time_events": 1500, "total_time": 67500
+                },
+                "B": {
+                    "views": 1450,
+                    "scroll_25": 1300, "scroll_50": 1100, "scroll_75": 600, "scroll_100": 350,
+                    "clicks": 290,
+                    "time_events": 1450, "total_time": 87000
+                }
             },
             "channels": [
                 { "source": "m.facebook.com / referral", "users": 800 },
@@ -34,9 +44,21 @@ document.addEventListener('DOMContentLoaded', async () => {
     const totalClicks = groupA.clicks + groupB.clicks;
     const convRate = totalViews > 0 ? ((totalClicks / totalViews) * 100).toFixed(1) : 0;
 
+    // Calculate Average Time
+    const totalTime = groupA.total_time + groupB.total_time;
+    const totalTimeEvents = groupA.time_events + groupB.time_events;
+    const avgTimeSeconds = totalTimeEvents > 0 ? Math.round(totalTime / totalTimeEvents) : 0;
+    const avgTimeMins = Math.floor(avgTimeSeconds / 60);
+    const avgTimeSecs = avgTimeSeconds % 60;
+    const avgTimeStr = `${avgTimeMins}m ${avgTimeSecs}s`;
+
     document.getElementById('total-views').textContent = totalViews.toLocaleString();
     document.getElementById('total-clicks').textContent = totalClicks.toLocaleString();
     document.getElementById('overall-conversion').textContent = `${convRate}%`;
+
+    // Add Average Time element if it exists
+    const avgTimeEl = document.getElementById('avg-time');
+    if (avgTimeEl) avgTimeEl.textContent = avgTimeStr;
 
     // 3. Render Charts
     renderFunnelChart(groupA, groupB);
@@ -46,11 +68,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 function renderFunnelChart(groupA, groupB) {
     const ctx = document.getElementById('funnelChart').getContext('2d');
 
-    // Calculate relative percentages for better visualization
-    // Step 1 is always 100%. Step 2 is % of views. Step 3 is % of views.
-    const funnelSteps = ['1. Page View', '2. Scroll (Engagement Proxy)', '3. CTA Click (Apply)'];
+    const funnelSteps = [
+        '1. Page View',
+        '2. Scroll (25%)',
+        '3. Scroll (50%)',
+        '4. Scroll (75%)',
+        '5. Scroll (100%)',
+        '6. CTA Click'
+    ];
 
-    // Raw numbers are more important for comparison, so we show absolute values
     new Chart(ctx, {
         type: 'bar',
         data: {
@@ -58,7 +84,7 @@ function renderFunnelChart(groupA, groupB) {
             datasets: [
                 {
                     label: 'Group A (작은 실패)',
-                    data: [groupA.views, groupA.scroll_75, groupA.clicks],
+                    data: [groupA.views, groupA.scroll_25, groupA.scroll_50, groupA.scroll_75, groupA.scroll_100, groupA.clicks],
                     backgroundColor: 'rgba(0, 201, 161, 0.8)',
                     borderColor: 'rgba(0, 201, 161, 1)',
                     borderWidth: 1,
@@ -66,7 +92,7 @@ function renderFunnelChart(groupA, groupB) {
                 },
                 {
                     label: 'Group B (안전한 도전)',
-                    data: [groupB.views, groupB.scroll_75, groupB.clicks],
+                    data: [groupB.views, groupB.scroll_25, groupB.scroll_50, groupB.scroll_75, groupB.scroll_100, groupB.clicks],
                     backgroundColor: 'rgba(255, 51, 102, 0.8)',
                     borderColor: 'rgba(255, 51, 102, 1)',
                     borderWidth: 1,
@@ -89,7 +115,6 @@ function renderFunnelChart(groupA, groupB) {
                             if (label) { label += ': '; }
                             if (context.parsed.y !== null) {
                                 label += context.parsed.y;
-                                // Calculate conversion drop-off on tooltip
                                 if (context.dataIndex > 0) {
                                     const initialViews = context.dataset.data[0];
                                     const rate = ((context.parsed.y / initialViews) * 100).toFixed(1);
