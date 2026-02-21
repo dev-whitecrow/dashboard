@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTS29 Gen2 Performance Dashboard</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>ACTS29 Gen2 Performance Dashboard</h1>
+            <p id="last-updated">Last Updated: Loading...</p>
+        </header>
+
+        <div class="summary-cards">
+            <div class="card premium-glow">
+                <h3>Total Page Views</h3>
+                <h2 id="total-views">--</h2>
+            </div>
+            <div class="card premium-glow">
+                <h3>Total CTA Clicks</h3>
+                <h2 id="total-clicks">--</h2>
+            </div>
+            <div class="card premium-glow">
+                <h3>Overall Conversion Rate</h3>
+                <h2 id="overall-conversion">--</h2>
+            </div>
+        </div>
+
+        <div class="charts-grid">
+            <div class="chart-container card">
+                <h2>A/B Test Funnel Comparison</h2>
+                <div class="chart-wrapper">
+                    <canvas id="funnelChart"></canvas>
+                </div>
+                <p class="chart-insight">Group A vs Group B performance from page view to final CTA click.</p>
+            </div>
+
+            <div class="chart-container card">
+                <h2>Acquisition Channels</h2>
+                <div class="chart-wrapper pie-wrapper">
+                    <canvas id="channelChart"></canvas>
+                </div>
+                <p class="chart-insight">Top traffic sources driving users to the landing page.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="assets/app.js"></script>
+</body>
+</html>
