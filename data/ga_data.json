@@ -1,0 +1,43 @@
+{
+    "last_updated": "2026-02-22T01:10:41.273835",
+    "ab_test": {
+        "A": {
+            "views": 1500,
+            "scroll_25": 1200,
+            "scroll_50": 900,
+            "scroll_75": 450,
+            "scroll_100": 200,
+            "clicks": 180,
+            "time_events": 1500,
+            "total_time": 67500
+        },
+        "B": {
+            "views": 1450,
+            "scroll_25": 1300,
+            "scroll_50": 1100,
+            "scroll_75": 600,
+            "scroll_100": 350,
+            "clicks": 290,
+            "time_events": 1450,
+            "total_time": 87000
+        }
+    },
+    "channels": [
+        {
+            "source": "m.facebook.com / referral",
+            "users": 800
+        },
+        {
+            "source": "instagram.com / referral",
+            "users": 650
+        },
+        {
+            "source": "google / organic",
+            "users": 300
+        },
+        {
+            "source": "(direct) / (none)",
+            "users": 200
+        }
+    ]
+}
