@@ -13,42 +13,47 @@ document.addEventListener('DOMContentLoaded', async () => {
         document.getElementById('overall-conversion').textContent = '-';
         const avgTimeEl = document.getElementById('avg-time');
         if (avgTimeEl) avgTimeEl.textContent = '-';
-        return; // 데이터 없으면 차트도 렌더링하지 않음
+        return;
     }
 
     // 2. Update Header & Summary Metrics
     const lastUpdatedDate = new Date(dashboardData.last_updated);
     document.getElementById('last-updated').textContent = `Last Updated: ${lastUpdatedDate.toLocaleString()}`;
 
-    const groupA = dashboardData.ab_test.A;
-    const groupB = dashboardData.ab_test.B;
-
-    const totalViews = groupA.views + groupB.views;
-    const totalClicks = groupA.clicks + groupB.clicks;
-    const convRate = totalViews > 0 ? ((totalClicks / totalViews) * 100).toFixed(1) : 0;
-
-    // Calculate Average Time
-    const totalTime = groupA.total_time + groupB.total_time;
-    const totalTimeEvents = groupA.time_events + groupB.time_events;
-    const avgTimeSeconds = totalTimeEvents > 0 ? Math.round(totalTime / totalTimeEvents) : 0;
-    const avgTimeMins = Math.floor(avgTimeSeconds / 60);
-    const avgTimeSecs = avgTimeSeconds % 60;
-    const avgTimeStr = `${avgTimeMins}m ${avgTimeSecs}s`;
+    // totals 데이터 사용 (A/B 무관 합산)
+    const totals = dashboardData.totals || {};
+    const totalViews = totals.views || 0;
+    const totalClicks = totals.clicks || 0;
+    const convRate = totalViews > 0 ? ((totalClicks / totalViews) * 100).toFixed(1) : '0';
+    const totalTimeEvents = totals.time_events || 0;
 
     document.getElementById('total-views').textContent = totalViews.toLocaleString();
     document.getElementById('total-clicks').textContent = totalClicks.toLocaleString();
     document.getElementById('overall-conversion').textContent = `${convRate}%`;
 
-    // Add Average Time element if it exists
+    // Average Time (time_events 기반 표시)
     const avgTimeEl = document.getElementById('avg-time');
-    if (avgTimeEl) avgTimeEl.textContent = avgTimeStr;
+    if (avgTimeEl) {
+        avgTimeEl.textContent = totalTimeEvents > 0 ? `${totalTimeEvents} events` : '-';
+    }
 
     // 3. Render Charts
-    renderFunnelChart(groupA, groupB);
-    renderChannelChart(dashboardData.channels);
+    const abAvailable = dashboardData.ab_available === true;
+
+    if (abAvailable) {
+        // A/B 데이터가 있으면 A/B 비교 퍼널
+        const groupA = dashboardData.ab_test.A;
+        const groupB = dashboardData.ab_test.B;
+        renderFunnelChart(groupA, groupB, true);
+    } else {
+        // A/B 데이터 없으면 전체 합산 퍼널
+        renderFunnelChart(totals, null, false);
+    }
+
+    renderChannelChart(dashboardData.channels || []);
 });
 
-function renderFunnelChart(groupA, groupB) {
+function renderFunnelChart(groupA, groupB, isABMode) {
     const ctx = document.getElementById('funnelChart').getContext('2d');
 
     const funnelSteps = [
@@ -60,29 +65,44 @@ function renderFunnelChart(groupA, groupB) {
         '6. CTA Click'
     ];
 
+    const dataA = [
+        groupA.views || 0, groupA.scroll_25 || 0, groupA.scroll_50 || 0,
+        groupA.scroll_75 || 0, groupA.scroll_100 || 0, groupA.clicks || 0
+    ];
+
+    const datasets = [{
+        label: isABMode ? 'Group A (작은 실패)' : 'Total (전체)',
+        data: dataA,
+        backgroundColor: 'rgba(0, 201, 161, 0.8)',
+        borderColor: 'rgba(0, 201, 161, 1)',
+        borderWidth: 1,
+        borderRadius: 4
+    }];
+
+    if (isABMode && groupB) {
+        const dataB = [
+            groupB.views || 0, groupB.scroll_25 || 0, groupB.scroll_50 || 0,
+            groupB.scroll_75 || 0, groupB.scroll_100 || 0, groupB.clicks || 0
+        ];
+        datasets.push({
+            label: 'Group B (안전한 도전)',
+            data: dataB,
+            backgroundColor: 'rgba(255, 51, 102, 0.8)',
+            borderColor: 'rgba(255, 51, 102, 1)',
+            borderWidth: 1,
+            borderRadius: 4
+        });
+    }
+
+    // A/B 미지원 시 안내 표시
+    const chartTitle = document.querySelector('#funnelChart').closest('.chart-container')?.querySelector('h2');
+    if (chartTitle && !isABMode) {
+        chartTitle.textContent = 'Funnel (전체 합산 · A/B 대기중)';
+    }
+
     new Chart(ctx, {
         type: 'bar',
-        data: {
-            labels: funnelSteps,
-            datasets: [
-                {
-                    label: 'Group A (작은 실패)',
-                    data: [groupA.views, groupA.scroll_25, groupA.scroll_50, groupA.scroll_75, groupA.scroll_100, groupA.clicks],
-                    backgroundColor: 'rgba(0, 201, 161, 0.8)',
-                    borderColor: 'rgba(0, 201, 161, 1)',
-                    borderWidth: 1,
-                    borderRadius: 4
-                },
-                {
-                    label: 'Group B (안전한 도전)',
-                    data: [groupB.views, groupB.scroll_25, groupB.scroll_50, groupB.scroll_75, groupB.scroll_100, groupB.clicks],
-                    backgroundColor: 'rgba(255, 51, 102, 0.8)',
-                    borderColor: 'rgba(255, 51, 102, 1)',
-                    borderWidth: 1,
-                    borderRadius: 4
-                }
-            ]
-        },
+        data: { labels: funnelSteps, datasets },
         options: {
             responsive: true,
             maintainAspectRatio: false,
@@ -97,11 +117,13 @@ function renderFunnelChart(groupA, groupB) {
                             let label = context.dataset.label || '';
                             if (label) { label += ': '; }
                             if (context.parsed.y !== null) {
-                                label += context.parsed.y;
+                                label += context.parsed.y.toLocaleString();
                                 if (context.dataIndex > 0) {
                                     const initialViews = context.dataset.data[0];
-                                    const rate = ((context.parsed.y / initialViews) * 100).toFixed(1);
-                                    label += ` (${rate}% of initial)`;
+                                    if (initialViews > 0) {
+                                        const rate = ((context.parsed.y / initialViews) * 100).toFixed(1);
+                                        label += ` (${rate}% of initial)`;
+                                    }
                                 }
                             }
                             return label;
@@ -127,6 +149,12 @@ function renderFunnelChart(groupA, groupB) {
 function renderChannelChart(channelsData) {
     const ctx = document.getElementById('channelChart').getContext('2d');
 
+    if (!channelsData || channelsData.length === 0) {
+        const chartTitle = ctx.canvas.closest('.chart-container')?.querySelector('h2');
+        if (chartTitle) chartTitle.textContent = 'Acquisition Channels (데이터 없음)';
+        return;
+    }
+
     // Sort and take top 5
     const topChannels = [...channelsData]
         .sort((a, b) => b.users - a.users)
@@ -135,7 +163,6 @@ function renderChannelChart(channelsData) {
     const labels = topChannels.map(c => c.source);
     const data = topChannels.map(c => c.users);
 
-    // Brand colors generator
     const backgroundColors = [
         '#00C9A1', '#33E0C1', '#009F81', '#1A7A66', '#0A4A3D'
     ];

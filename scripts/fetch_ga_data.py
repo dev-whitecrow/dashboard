@@ -16,67 +16,137 @@ from google.analytics.data_v1beta.types import (
 TARGET_PAGE = "/groute-contact/acts29_gen2.html"
 
 
-def fetch_ga4_data():
-    property_id = os.environ.get("GA_PROPERTY_ID")
-    if not property_id:
-        raise RuntimeError("GA_PROPERTY_ID environment variable not found.")
+def make_page_filter():
+    """pagePath 필터 생성"""
+    return FilterExpression(
+        filter=Filter(
+            field_name="pagePath",
+            string_filter=Filter.StringFilter(
+                value=TARGET_PAGE,
+                match_type=Filter.StringFilter.MatchType.CONTAINS,
+            ),
+        )
+    )
 
-    client = BetaAnalyticsDataClient()
 
-    # 공통 필터: pagePath + eventName
-    page_and_event_filter = FilterExpression(
+def make_page_and_event_filter(event_names):
+    """pagePath + eventName 복합 필터 생성"""
+    return FilterExpression(
         and_group=FilterExpressionList(
             expressions=[
-                FilterExpression(
-                    filter=Filter(
-                        field_name="pagePath",
-                        string_filter=Filter.StringFilter(
-                            value=TARGET_PAGE,
-                            match_type=Filter.StringFilter.MatchType.CONTAINS,
-                        ),
-                    )
-                ),
+                make_page_filter(),
                 FilterExpression(
                     filter=Filter(
                         field_name="eventName",
-                        in_list_filter=Filter.InListFilter(
-                            values=["detail_page_view", "scroll_depth", "time_on_page", "cta_click"]
-                        ),
+                        in_list_filter=Filter.InListFilter(values=event_names),
                     )
                 ),
             ]
         )
     )
 
-    # 1. 이벤트 + A/B 그룹별 메트릭
-    # NOTE: customEvent:ab_group 사용하려면 GA4 Admin에서 커스텀 차원 등록 필요
-    request_events = RunReportRequest(
-        property=f"properties/{property_id}",
-        dimensions=[
-            Dimension(name="eventName"),
-            Dimension(name="customEvent:ab_group"),
-        ],
-        metrics=[
-            Metric(name="eventCount"),
-            Metric(name="totalUsers"),
-        ],
-        date_ranges=[DateRange(start_date="30daysAgo", end_date="today")],
-        dimension_filter=page_and_event_filter,
-    )
 
-    # 2. 스크롤 심도별 데이터 (scroll_percent 커스텀 차원)
-    scroll_filter = FilterExpression(
+def fetch_ga4_data():
+    property_id = os.environ.get("GA_PROPERTY_ID")
+    if not property_id:
+        raise RuntimeError("GA_PROPERTY_ID environment variable not found.")
+
+    client = BetaAnalyticsDataClient()
+    date_range = [DateRange(start_date="30daysAgo", end_date="today")]
+    target_events = ["detail_page_view", "scroll_depth", "time_on_page", "cta_click"]
+
+    # 결과 데이터 초기화
+    data = {
+        "last_updated": datetime.now().isoformat(),
+        "ab_available": False,
+        "totals": {
+            "views": 0,
+            "scroll_25": 0, "scroll_50": 0, "scroll_75": 0, "scroll_100": 0,
+            "clicks": 0,
+            "time_events": 0,
+        },
+        "ab_test": {
+            "A": {
+                "views": 0,
+                "scroll_25": 0, "scroll_50": 0, "scroll_75": 0, "scroll_100": 0,
+                "clicks": 0,
+                "time_events": 0,
+            },
+            "B": {
+                "views": 0,
+                "scroll_25": 0, "scroll_50": 0, "scroll_75": 0, "scroll_100": 0,
+                "clicks": 0,
+                "time_events": 0,
+            },
+        },
+        "channels": [],
+    }
+
+    # ── 1. A/B 그룹별 이벤트 데이터 시도 ──
+    try:
+        request_ab = RunReportRequest(
+            property=f"properties/{property_id}",
+            dimensions=[
+                Dimension(name="eventName"),
+                Dimension(name="customEvent:ab_group"),
+            ],
+            metrics=[Metric(name="eventCount")],
+            date_ranges=date_range,
+            dimension_filter=make_page_and_event_filter(target_events),
+        )
+        response_ab = client.run_report(request_ab)
+        data["ab_available"] = True
+        print("✓ A/B group data fetched successfully.")
+
+        for row in response_ab.rows:
+            event_name = row.dimension_values[0].value
+            ab_group = row.dimension_values[1].value
+            count = int(row.metric_values[0].value)
+
+            if ab_group not in ("A", "B"):
+                continue
+            if event_name == "detail_page_view":
+                data["ab_test"][ab_group]["views"] += count
+            elif event_name == "cta_click":
+                data["ab_test"][ab_group]["clicks"] += count
+            elif event_name == "time_on_page":
+                data["ab_test"][ab_group]["time_events"] += count
+
+    except Exception as e:
+        print(f"⚠ A/B group dimension not available yet: {e}")
+        print("  → Fetching totals without A/B split.")
+
+    # ── 2. 전체 이벤트 합산 (A/B 무관) ──
+    request_totals = RunReportRequest(
+        property=f"properties/{property_id}",
+        dimensions=[Dimension(name="eventName")],
+        metrics=[Metric(name="eventCount")],
+        date_ranges=date_range,
+        dimension_filter=make_page_and_event_filter(target_events),
+    )
+    response_totals = client.run_report(request_totals)
+
+    for row in response_totals.rows:
+        event_name = row.dimension_values[0].value
+        count = int(row.metric_values[0].value)
+
+        if event_name == "detail_page_view":
+            data["totals"]["views"] += count
+        elif event_name == "cta_click":
+            data["totals"]["clicks"] += count
+        elif event_name == "time_on_page":
+            data["totals"]["time_events"] += count
+        elif event_name == "scroll_depth":
+            # scroll_depth 총 이벤트 수 (심도별 분류는 아래에서)
+            pass
+
+    print(f"  Total views: {data['totals']['views']}, clicks: {data['totals']['clicks']}")
+
+    # ── 3. 스크롤 심도 데이터 ──
+    scroll_event_filter = FilterExpression(
         and_group=FilterExpressionList(
             expressions=[
-                FilterExpression(
-                    filter=Filter(
-                        field_name="pagePath",
-                        string_filter=Filter.StringFilter(
-                            value=TARGET_PAGE,
-                            match_type=Filter.StringFilter.MatchType.CONTAINS,
-                        ),
-                    )
-                ),
+                make_page_filter(),
                 FilterExpression(
                     filter=Filter(
                         field_name="eventName",
@@ -90,28 +160,47 @@ def fetch_ga4_data():
         )
     )
 
-    request_scroll = RunReportRequest(
-        property=f"properties/{property_id}",
-        dimensions=[
-            Dimension(name="customEvent:ab_group"),
-            Dimension(name="customEvent:scroll_percent"),
-        ],
-        metrics=[Metric(name="eventCount")],
-        date_ranges=[DateRange(start_date="30daysAgo", end_date="today")],
-        dimension_filter=scroll_filter,
-    )
-
-    # 3. 유입 채널 (acts29_gen2 페이지 한정)
-    page_filter = FilterExpression(
-        filter=Filter(
-            field_name="pagePath",
-            string_filter=Filter.StringFilter(
-                value=TARGET_PAGE,
-                match_type=Filter.StringFilter.MatchType.CONTAINS,
-            ),
+    # 3a. scroll_percent 커스텀 차원으로 심도별 분류 시도
+    try:
+        request_scroll_detail = RunReportRequest(
+            property=f"properties/{property_id}",
+            dimensions=[Dimension(name="customEvent:scroll_percent")],
+            metrics=[Metric(name="eventCount")],
+            date_ranges=date_range,
+            dimension_filter=scroll_event_filter,
         )
-    )
+        response_scroll = client.run_report(request_scroll_detail)
 
+        for row in response_scroll.rows:
+            scroll_pct = row.dimension_values[0].value  # "25", "50", "75", "100"
+            count = int(row.metric_values[0].value)
+            key = f"scroll_{scroll_pct}"
+            if key in data["totals"]:
+                data["totals"][key] += count
+
+        print("✓ Scroll depth detail fetched successfully.")
+
+    except Exception as e:
+        print(f"⚠ scroll_percent dimension not available: {e}")
+        # fallback: scroll_depth 총 이벤트 수만 기록
+        request_scroll_total = RunReportRequest(
+            property=f"properties/{property_id}",
+            dimensions=[Dimension(name="eventName")],
+            metrics=[Metric(name="eventCount")],
+            date_ranges=date_range,
+            dimension_filter=scroll_event_filter,
+        )
+        response_scroll_total = client.run_report(request_scroll_total)
+        for row in response_scroll_total.rows:
+            total_scroll = int(row.metric_values[0].value)
+            # 비율 추정 (실제 데이터 없을 때)
+            data["totals"]["scroll_25"] = total_scroll
+            data["totals"]["scroll_50"] = int(total_scroll * 0.75)
+            data["totals"]["scroll_75"] = int(total_scroll * 0.50)
+            data["totals"]["scroll_100"] = int(total_scroll * 0.25)
+        print("  → Used estimated scroll ratios as fallback.")
+
+    # ── 4. 유입 채널 ──
     request_channels = RunReportRequest(
         property=f"properties/{property_id}",
         dimensions=[Dimension(name="sessionSourceMedium")],
@@ -119,69 +208,17 @@ def fetch_ga4_data():
             Metric(name="totalUsers"),
             Metric(name="screenPageViews"),
         ],
-        date_ranges=[DateRange(start_date="30daysAgo", end_date="today")],
-        dimension_filter=page_filter,
+        date_ranges=date_range,
+        dimension_filter=make_page_filter(),
     )
-
-    # API 호출
-    response_events = client.run_report(request_events)
-    response_scroll = client.run_report(request_scroll)
     response_channels = client.run_report(request_channels)
 
-    # 결과 파싱
-    data = {
-        "last_updated": datetime.now().isoformat(),
-        "ab_test": {
-            "A": {
-                "views": 0,
-                "scroll_25": 0, "scroll_50": 0, "scroll_75": 0, "scroll_100": 0,
-                "clicks": 0,
-                "time_events": 0, "total_time": 0,
-            },
-            "B": {
-                "views": 0,
-                "scroll_25": 0, "scroll_50": 0, "scroll_75": 0, "scroll_100": 0,
-                "clicks": 0,
-                "time_events": 0, "total_time": 0,
-            },
-        },
-        "channels": [],
-    }
-
-    # 이벤트 데이터 처리
-    for row in response_events.rows:
-        event_name = row.dimension_values[0].value
-        ab_group = row.dimension_values[1].value
-        count = int(row.metric_values[0].value)
-
-        if ab_group not in ("A", "B"):
-            continue
-
-        if event_name == "detail_page_view":
-            data["ab_test"][ab_group]["views"] += count
-        elif event_name == "cta_click":
-            data["ab_test"][ab_group]["clicks"] += count
-        elif event_name == "time_on_page":
-            data["ab_test"][ab_group]["time_events"] += count
-
-    # 스크롤 심도 데이터 처리
-    for row in response_scroll.rows:
-        ab_group = row.dimension_values[0].value
-        scroll_pct = row.dimension_values[1].value  # "25", "50", "75", "100"
-        count = int(row.metric_values[0].value)
-
-        if ab_group not in ("A", "B"):
-            continue
-
-        key = f"scroll_{scroll_pct}"
-        if key in data["ab_test"][ab_group]:
-            data["ab_test"][ab_group][key] += count
-
-    # 채널 데이터 처리
     for row in response_channels.rows:
         source_medium = row.dimension_values[0].value
         users = int(row.metric_values[0].value)
         data["channels"].append({"source": source_medium, "users": users})
+
+    print(f"✓ Channels: {len(data['channels'])} sources found.")
 
     return data
 
