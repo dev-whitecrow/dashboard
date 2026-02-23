@@ -1,27 +1,27 @@
 {
-    "last_updated": "2026-02-23T07:35:57.989172",
+    "last_updated": "2026-02-23T09:08:00.706609",
     "ab_available": true,
     "totals": {
-        "views": 435,
-        "scroll_25": 280,
-        "scroll_50": 210,
-        "scroll_75": 140,
-        "scroll_100": 70,
-        "clicks": 78,
-        "leads": 1,
-        "time_events": 294,
-        "avg_session_duration_sec": 184
+        "views": 439,
+        "scroll_25": 284,
+        "scroll_50": 213,
+        "scroll_75": 142,
+        "scroll_100": 71,
+        "clicks": 79,
+        "leads": 2,
+        "time_events": 297,
+        "avg_session_duration_sec": 186
     },
     "ab_test": {
         "A": {
-            "views": 8,
+            "views": 10,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 0,
-            "leads": 1,
-            "time_events": 3
+            "clicks": 2,
+            "leads": 2,
+            "time_events": 6
         },
         "B": {
             "views": 11,
@@ -37,7 +37,7 @@
     "channels": [
         {
             "source": "instagram / social_ads",
-            "users": 190
+            "users": 191
         },
         {
             "source": "kakaotalk / messenger",
@@ -53,7 +53,7 @@
         },
         {
             "source": "kakaotalk / community",
-            "users": 28
+            "users": 30
         },
         {
             "source": "(direct) / (none)",
@@ -76,15 +76,15 @@
             "users": 6
         },
         {
+            "source": "threads / post",
+            "users": 6
+        },
+        {
             "source": "eo / post",
             "users": 5
         },
         {
             "source": "kakaotalk / message",
-            "users": 5
-        },
-        {
-            "source": "threads / post",
             "users": 5
         },
         {
@@ -118,6 +118,14 @@
         {
             "source": "youtube / profile",
             "users": 2
+        },
+        {
+            "source": "eventsmanager.facebook.com / referral",
+            "users": 1
+        },
+        {
+            "source": "google / organic",
+            "users": 1
         },
         {
             "source": "kakaotalk_plusfriend / social",
