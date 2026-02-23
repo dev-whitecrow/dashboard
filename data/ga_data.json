@@ -1,43 +1,119 @@
 {
-    "last_updated": "2026-02-23T01:10:21.036728",
+    "last_updated": "2026-02-23T01:29:35.763040",
     "ab_test": {
         "A": {
-            "views": 1500,
-            "scroll_25": 1200,
-            "scroll_50": 900,
-            "scroll_75": 450,
-            "scroll_100": 200,
-            "clicks": 180,
-            "time_events": 1500,
-            "total_time": 67500
+            "views": 0,
+            "scroll_25": 0,
+            "scroll_50": 0,
+            "scroll_75": 0,
+            "scroll_100": 0,
+            "clicks": 0,
+            "time_events": 0,
+            "total_time": 0
         },
         "B": {
-            "views": 1450,
-            "scroll_25": 1300,
-            "scroll_50": 1100,
-            "scroll_75": 600,
-            "scroll_100": 350,
-            "clicks": 290,
-            "time_events": 1450,
-            "total_time": 87000
+            "views": 0,
+            "scroll_25": 0,
+            "scroll_50": 0,
+            "scroll_75": 0,
+            "scroll_100": 0,
+            "clicks": 0,
+            "time_events": 0,
+            "total_time": 0
         }
     },
     "channels": [
         {
-            "source": "m.facebook.com / referral",
-            "users": 800
+            "source": "instagram / social_ads",
+            "users": 173
         },
         {
-            "source": "instagram.com / referral",
-            "users": 650
+            "source": "kakaotalk / messenger",
+            "users": 101
         },
         {
-            "source": "google / organic",
-            "users": 300
+            "source": "instagram / advertisement",
+            "users": 32
+        },
+        {
+            "source": "instagram_ads / social",
+            "users": 30
+        },
+        {
+            "source": "kakaotalk / community",
+            "users": 25
         },
         {
             "source": "(direct) / (none)",
-            "users": 200
+            "users": 22
+        },
+        {
+            "source": "instagram / profile",
+            "users": 16
+        },
+        {
+            "source": "instagram_story / social",
+            "users": 7
+        },
+        {
+            "source": "(not set)",
+            "users": 6
+        },
+        {
+            "source": "message / waitinglist",
+            "users": 6
+        },
+        {
+            "source": "eo / post",
+            "users": 5
+        },
+        {
+            "source": "kakaotalk / message",
+            "users": 5
+        },
+        {
+            "source": "threads / post",
+            "users": 5
+        },
+        {
+            "source": "linkedin / community",
+            "users": 3
+        },
+        {
+            "source": "linkedin / social",
+            "users": 3
+        },
+        {
+            "source": "maily / email",
+            "users": 3
+        },
+        {
+            "source": "newsletter / post",
+            "users": 3
+        },
+        {
+            "source": "linkedin / message",
+            "users": 2
+        },
+        {
+            "source": "linkedin / post",
+            "users": 2
+        },
+        {
+            "source": "youtube / profile",
+            "users": 2
+        },
+        {
+            "source": "ig_text_post_permalink / post",
+            "users": 1
+        },
+        {
+            "source": "kakaotalk_plusfriend / social",
+            "users": 1
+        },
+        {
+            "source": "tiktok / profile",
+            "users": 1
         }
     ]
 }
