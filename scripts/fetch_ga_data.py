@@ -12,8 +12,8 @@ from google.analytics.data_v1beta.types import (
     RunReportRequest,
 )
 
-# acts29_gen2.html 페이지 경로 (pagePath 필터용)
-TARGET_PAGE = "/groute-contact/acts29_gen2.html"
+# acts29_gen2.html 페이지 경로 (pagePath 필터용) - thankyou 페이지 포함되도록 .html 제거
+TARGET_PAGE = "/groute-contact/acts29_gen2"
 
 
 def make_page_filter():
@@ -53,7 +53,7 @@ def fetch_ga4_data():
 
     client = BetaAnalyticsDataClient()
     date_range = [DateRange(start_date="30daysAgo", end_date="today")]
-    target_events = ["detail_page_view", "scroll_depth", "time_on_page", "cta_click"]
+    target_events = ["detail_page_view", "scroll_depth", "time_on_page", "cta_click", "generate_lead"]
 
     # 결과 데이터 초기화
     data = {
@@ -63,6 +63,7 @@ def fetch_ga4_data():
             "views": 0,
             "scroll_25": 0, "scroll_50": 0, "scroll_75": 0, "scroll_100": 0,
             "clicks": 0,
+            "leads": 0,
             "time_events": 0,
         },
         "ab_test": {
@@ -70,12 +71,14 @@ def fetch_ga4_data():
                 "views": 0,
                 "scroll_25": 0, "scroll_50": 0, "scroll_75": 0, "scroll_100": 0,
                 "clicks": 0,
+                "leads": 0,
                 "time_events": 0,
             },
             "B": {
                 "views": 0,
                 "scroll_25": 0, "scroll_50": 0, "scroll_75": 0, "scroll_100": 0,
                 "clicks": 0,
+                "leads": 0,
                 "time_events": 0,
             },
         },
@@ -108,6 +111,8 @@ def fetch_ga4_data():
                 data["ab_test"][ab_group]["views"] += count
             elif event_name == "cta_click":
                 data["ab_test"][ab_group]["clicks"] += count
+            elif event_name == "generate_lead":
+                data["ab_test"][ab_group]["leads"] += count
             elif event_name == "time_on_page":
                 data["ab_test"][ab_group]["time_events"] += count
 
@@ -139,6 +144,8 @@ def fetch_ga4_data():
             data["totals"]["views"] += count
         elif event_name == "cta_click":
             data["totals"]["clicks"] += count
+        elif event_name == "generate_lead":
+            data["totals"]["leads"] += count
         elif event_name == "time_on_page":
             data["totals"]["time_events"] += count
         elif event_name == "scroll_depth":

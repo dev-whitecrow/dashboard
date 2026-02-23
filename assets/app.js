@@ -50,16 +50,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         // A/B 데이터가 있으면 A/B 비교 퍼널
         const groupA = dashboardData.ab_test.A;
         const groupB = dashboardData.ab_test.B;
-        renderFunnelChart(groupA, groupB, true);
+        renderFunnelChart(groupA, groupB, true, totals);
     } else {
         // A/B 데이터 없으면 전체 합산 퍼널
-        renderFunnelChart(totals, null, false);
+        renderFunnelChart(totals, null, false, totals);
     }
 
     renderChannelChart(dashboardData.channels || []);
 });
 
-function renderFunnelChart(groupA, groupB, isABMode) {
+function renderFunnelChart(groupA, groupB, isABMode, totals) {
     const ctx = document.getElementById('funnelChart').getContext('2d');
 
     const funnelSteps = [
@@ -68,12 +68,13 @@ function renderFunnelChart(groupA, groupB, isABMode) {
         '3. Scroll (50%)',
         '4. Scroll (75%)',
         '5. Scroll (100%)',
-        '6. CTA Click'
+        '6. CTA Click',
+        '7. Form Submitted'
     ];
 
     const dataA = [
         groupA.views || 0, groupA.scroll_25 || 0, groupA.scroll_50 || 0,
-        groupA.scroll_75 || 0, groupA.scroll_100 || 0, groupA.clicks || 0
+        groupA.scroll_75 || 0, groupA.scroll_100 || 0, groupA.clicks || 0, groupA.leads || 0
     ];
 
     const datasets = [{
@@ -88,7 +89,7 @@ function renderFunnelChart(groupA, groupB, isABMode) {
     if (isABMode && groupB) {
         const dataB = [
             groupB.views || 0, groupB.scroll_25 || 0, groupB.scroll_50 || 0,
-            groupB.scroll_75 || 0, groupB.scroll_100 || 0, groupB.clicks || 0
+            groupB.scroll_75 || 0, groupB.scroll_100 || 0, groupB.clicks || 0, groupB.leads || 0
         ];
         datasets.push({
             label: 'Group B (안전한 도전)',
@@ -98,6 +99,22 @@ function renderFunnelChart(groupA, groupB, isABMode) {
             borderWidth: 1,
             borderRadius: 4
         });
+
+        if (totals) {
+            const dataTotal = [
+                totals.views || 0, totals.scroll_25 || 0, totals.scroll_50 || 0,
+                totals.scroll_75 || 0, totals.scroll_100 || 0, totals.clicks || 0, totals.leads || 0
+            ];
+            datasets.push({
+                label: 'Total (합산)',
+                data: dataTotal,
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                borderColor: 'rgba(255, 255, 255, 0.4)',
+                borderWidth: 1,
+                borderDash: [5, 5],
+                borderRadius: 4
+            });
+        }
     }
 
     // A/B 미지원 시 안내 표시
