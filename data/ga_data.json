@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-02-23T07:27:50.704176",
+    "last_updated": "2026-02-23T07:35:57.989172",
     "ab_available": true,
     "totals": {
-        "views": 591,
-        "scroll_25": 1026,
-        "scroll_50": 769,
-        "scroll_75": 513,
-        "scroll_100": 256,
-        "clicks": 139,
-        "leads": 2,
-        "time_events": 877,
-        "avg_session_duration_sec": 185
+        "views": 435,
+        "scroll_25": 280,
+        "scroll_50": 210,
+        "scroll_75": 140,
+        "scroll_100": 70,
+        "clicks": 78,
+        "leads": 1,
+        "time_events": 294,
+        "avg_session_duration_sec": 184
     },
     "ab_test": {
         "A": {
-            "views": 14,
+            "views": 8,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 0,
-            "leads": 4,
-            "time_events": 8
+            "leads": 1,
+            "time_events": 3
         },
         "B": {
-            "views": 23,
+            "views": 11,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 2,
+            "clicks": 1,
             "leads": 0,
-            "time_events": 19
+            "time_events": 6
         }
     },
     "channels": [
         {
             "source": "instagram / social_ads",
-            "users": 189
+            "users": 190
         },
         {
             "source": "kakaotalk / messenger",
@@ -53,7 +53,7 @@
         },
         {
             "source": "kakaotalk / community",
-            "users": 27
+            "users": 28
         },
         {
             "source": "(direct) / (none)",
@@ -65,7 +65,7 @@
         },
         {
             "source": "(not set)",
-            "users": 8
+            "users": 9
         },
         {
             "source": "instagram_story / social",
