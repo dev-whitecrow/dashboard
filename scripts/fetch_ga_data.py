@@ -95,8 +95,7 @@ def fetch_ga4_data():
             dimension_filter=make_page_and_event_filter(target_events),
         )
         response_ab = client.run_report(request_ab)
-        data["ab_available"] = True
-        print("✓ A/B group data fetched successfully.")
+        print("✓ A/B group query succeeded.")
 
         for row in response_ab.rows:
             event_name = row.dimension_values[0].value
@@ -115,6 +114,12 @@ def fetch_ga4_data():
     except Exception as e:
         print(f"⚠ A/B group dimension not available yet: {e}")
         print("  → Fetching totals without A/B split.")
+
+    # A/B 데이터 실제 존재 여부 판단
+    ab_a = data["ab_test"]["A"]
+    ab_b = data["ab_test"]["B"]
+    data["ab_available"] = (ab_a["views"] + ab_b["views"]) > 0
+    print(f"  A/B available: {data['ab_available']} (A views: {ab_a['views']}, B views: {ab_b['views']})")
 
     # ── 2. 전체 이벤트 합산 (A/B 무관) ──
     request_totals = RunReportRequest(
@@ -200,7 +205,21 @@ def fetch_ga4_data():
             data["totals"]["scroll_100"] = int(total_scroll * 0.25)
         print("  → Used estimated scroll ratios as fallback.")
 
-    # ── 4. 유입 채널 ──
+    # ── 4. 평균 세션 체류 시간 ──
+    request_duration = RunReportRequest(
+        property=f"properties/{property_id}",
+        metrics=[Metric(name="averageSessionDuration")],
+        date_ranges=date_range,
+        dimension_filter=make_page_filter(),
+    )
+    response_duration = client.run_report(request_duration)
+
+    if response_duration.rows:
+        avg_sec = float(response_duration.rows[0].metric_values[0].value)
+        data["totals"]["avg_session_duration_sec"] = round(avg_sec)
+        print(f"✓ Avg session duration: {round(avg_sec)}s")
+
+    # ── 5. 유입 채널 ──
     request_channels = RunReportRequest(
         property=f"properties/{property_id}",
         dimensions=[Dimension(name="sessionSourceMedium")],

@@ -25,16 +25,22 @@ document.addEventListener('DOMContentLoaded', async () => {
     const totalViews = totals.views || 0;
     const totalClicks = totals.clicks || 0;
     const convRate = totalViews > 0 ? ((totalClicks / totalViews) * 100).toFixed(1) : '0';
-    const totalTimeEvents = totals.time_events || 0;
 
     document.getElementById('total-views').textContent = totalViews.toLocaleString();
     document.getElementById('total-clicks').textContent = totalClicks.toLocaleString();
     document.getElementById('overall-conversion').textContent = `${convRate}%`;
 
-    // Average Time (time_events 기반 표시)
+    // Average Time on Page
     const avgTimeEl = document.getElementById('avg-time');
     if (avgTimeEl) {
-        avgTimeEl.textContent = totalTimeEvents > 0 ? `${totalTimeEvents} events` : '-';
+        const avgSec = totals.avg_session_duration_sec || 0;
+        if (avgSec > 0) {
+            const mins = Math.floor(avgSec / 60);
+            const secs = avgSec % 60;
+            avgTimeEl.textContent = mins > 0 ? `${mins}m ${secs}s` : `${secs}s`;
+        } else {
+            avgTimeEl.textContent = '-';
+        }
     }
 
     // 3. Render Charts
