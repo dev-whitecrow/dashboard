@@ -74,9 +74,7 @@ def fetch_ga4_data():
         response_channels = client.run_report(request_channels)
     except Exception as e:
         print(f"API Error: {e}")
-        # Build dummy data for local development if API fails or credentials aren't set
-        print("Falling back to dummy data for development.")
-        return generate_dummy_data()
+        raise  # Actions 로그에서 원인 파악 가능하도록 에러 전파
 
     # Parse and format the data
     data = {
@@ -137,31 +135,6 @@ def fetch_ga4_data():
 
     return data
 
-def generate_dummy_data():
-    from datetime import datetime
-    return {
-        "last_updated": datetime.now().isoformat(),
-         "ab_test": {
-             "A": {
-                 "views": 1500, 
-                 "scroll_25": 1200, "scroll_50": 900, "scroll_75": 450, "scroll_100": 200, 
-                 "clicks": 180, 
-                 "time_events": 1500, "total_time": 67500
-             },
-             "B": {
-                 "views": 1450, 
-                 "scroll_25": 1300, "scroll_50": 1100, "scroll_75": 600, "scroll_100": 350, 
-                 "clicks": 290, 
-                 "time_events": 1450, "total_time": 87000
-             }
-        },
-        "channels": [
-            {"source": "m.facebook.com / referral", "users": 800},
-            {"source": "instagram.com / referral", "users": 650},
-            {"source": "google / organic", "users": 300},
-            {"source": "(direct) / (none)", "users": 200}
-        ]
-    }
 
 if __name__ == "__main__":
     from datetime import datetime

@@ -6,31 +6,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (!response.ok) throw new Error('Data file not found');
         dashboardData = await response.json();
     } catch (error) {
-        console.warn('Failed to load JSON data. Using fallback dummy data for preview.', error);
-        // Fallback for immediate UI preview without running the python script
-        dashboardData = {
-            "last_updated": new Date().toISOString(),
-            "ab_test": {
-                "A": {
-                    "views": 1500,
-                    "scroll_25": 1200, "scroll_50": 900, "scroll_75": 450, "scroll_100": 200,
-                    "clicks": 180,
-                    "time_events": 1500, "total_time": 67500
-                },
-                "B": {
-                    "views": 1450,
-                    "scroll_25": 1300, "scroll_50": 1100, "scroll_75": 600, "scroll_100": 350,
-                    "clicks": 290,
-                    "time_events": 1450, "total_time": 87000
-                }
-            },
-            "channels": [
-                { "source": "m.facebook.com / referral", "users": 800 },
-                { "source": "instagram.com / referral", "users": 650 },
-                { "source": "google / organic", "users": 300 },
-                { "source": "(direct) / (none)", "users": 200 }
-            ]
-        };
+        console.warn('GA data not available yet.', error);
+        document.getElementById('last-updated').textContent = 'Last Updated: 데이터 없음';
+        document.getElementById('total-views').textContent = '-';
+        document.getElementById('total-clicks').textContent = '-';
+        document.getElementById('overall-conversion').textContent = '-';
+        const avgTimeEl = document.getElementById('avg-time');
+        if (avgTimeEl) avgTimeEl.textContent = '-';
+        return; // 데이터 없으면 차트도 렌더링하지 않음
     }
 
     // 2. Update Header & Summary Metrics
