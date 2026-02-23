@@ -1,6 +1,6 @@
 {
-    "last_updated": "2026-02-23T02:12:43.114557",
-    "ab_available": true,
+    "last_updated": "2026-02-23T02:20:33.896550",
+    "ab_available": false,
     "totals": {
         "views": 564,
         "scroll_25": 0,
@@ -8,7 +8,8 @@
         "scroll_75": 0,
         "scroll_100": 0,
         "clicks": 136,
-        "time_events": 851
+        "time_events": 851,
+        "avg_session_duration_sec": 183
     },
     "ab_test": {
         "A": {
