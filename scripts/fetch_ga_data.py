@@ -93,7 +93,7 @@ def fetch_ga4_data():
                 Dimension(name="eventName"),
                 Dimension(name="customEvent:ab_group"),
             ],
-            metrics=[Metric(name="eventCount")],
+            metrics=[Metric(name="totalUsers")],
             date_ranges=date_range,
             dimension_filter=make_page_and_event_filter(target_events),
         )
@@ -130,7 +130,7 @@ def fetch_ga4_data():
     request_totals = RunReportRequest(
         property=f"properties/{property_id}",
         dimensions=[Dimension(name="eventName")],
-        metrics=[Metric(name="eventCount")],
+        metrics=[Metric(name="totalUsers")],
         date_ranges=date_range,
         dimension_filter=make_page_and_event_filter(target_events),
     )
@@ -177,7 +177,7 @@ def fetch_ga4_data():
         request_scroll_detail = RunReportRequest(
             property=f"properties/{property_id}",
             dimensions=[Dimension(name="customEvent:scroll_percent")],
-            metrics=[Metric(name="eventCount")],
+            metrics=[Metric(name="totalUsers")],
             date_ranges=date_range,
             dimension_filter=scroll_event_filter,
         )
@@ -198,7 +198,7 @@ def fetch_ga4_data():
         request_scroll_total = RunReportRequest(
             property=f"properties/{property_id}",
             dimensions=[Dimension(name="eventName")],
-            metrics=[Metric(name="eventCount")],
+            metrics=[Metric(name="totalUsers")],
             date_ranges=date_range,
             dimension_filter=scroll_event_filter,
         )
