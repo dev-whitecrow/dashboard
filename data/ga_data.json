@@ -1,37 +1,37 @@
 {
-    "last_updated": "2026-02-23T15:28:00.304974",
+    "last_updated": "2026-02-24T01:08:56.777609",
     "ab_available": true,
     "totals": {
-        "views": 489,
-        "scroll_25": 311,
-        "scroll_50": 233,
-        "scroll_75": 155,
-        "scroll_100": 77,
-        "clicks": 87,
+        "views": 501,
+        "scroll_25": 323,
+        "scroll_50": 242,
+        "scroll_75": 161,
+        "scroll_100": 80,
+        "clicks": 89,
         "leads": 2,
-        "time_events": 338,
-        "avg_session_duration_sec": 183
+        "time_events": 347,
+        "avg_session_duration_sec": 181
     },
     "ab_test": {
         "A": {
-            "views": 37,
+            "views": 41,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 5,
             "leads": 2,
-            "time_events": 29
+            "time_events": 31
         },
         "B": {
-            "views": 33,
+            "views": 39,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 5,
+            "clicks": 6,
             "leads": 0,
-            "time_events": 23
+            "time_events": 28
         }
     },
     "channels": [
@@ -41,11 +41,11 @@
         },
         {
             "source": "kakaotalk / messenger",
-            "users": 101
+            "users": 102
         },
         {
             "source": "kakaotalk / community",
-            "users": 39
+            "users": 47
         },
         {
             "source": "instagram / advertisement",
@@ -57,15 +57,15 @@
         },
         {
             "source": "(direct) / (none)",
-            "users": 23
+            "users": 24
         },
         {
             "source": "instagram / profile",
-            "users": 20
+            "users": 21
         },
         {
             "source": "kakaotalk / message",
-            "users": 12
+            "users": 13
         },
         {
             "source": "(not set)",
@@ -90,6 +90,10 @@
         {
             "source": "maily / email",
             "users": 4
+        },
+        {
+            "source": "instagram / messenger",
+            "users": 3
         },
         {
             "source": "linkedin / community",
@@ -125,10 +129,6 @@
         },
         {
             "source": "google / organic",
-            "users": 1
-        },
-        {
-            "source": "instagram / messenger",
             "users": 1
         },
         {
