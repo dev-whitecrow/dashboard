@@ -1,51 +1,51 @@
 {
-    "last_updated": "2026-02-24T04:40:32.936544",
+    "last_updated": "2026-02-25T01:14:31.675908",
     "ab_available": true,
     "totals": {
-        "views": 505,
-        "scroll_25": 326,
-        "scroll_50": 244,
-        "scroll_75": 163,
-        "scroll_100": 81,
-        "clicks": 91,
+        "views": 554,
+        "scroll_25": 365,
+        "scroll_50": 273,
+        "scroll_75": 182,
+        "scroll_100": 91,
+        "clicks": 100,
         "leads": 3,
-        "time_events": 349,
-        "avg_session_duration_sec": 183
+        "time_events": 376,
+        "avg_session_duration_sec": 187
     },
     "ab_test": {
         "A": {
-            "views": 48,
+            "views": 72,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 8,
+            "clicks": 13,
             "leads": 3,
-            "time_events": 38
+            "time_events": 52
         },
         "B": {
-            "views": 45,
+            "views": 65,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 7,
+            "clicks": 10,
             "leads": 0,
-            "time_events": 31
+            "time_events": 41
         }
     },
     "channels": [
         {
             "source": "instagram / social_ads",
-            "users": 223
+            "users": 260
         },
         {
             "source": "kakaotalk / messenger",
-            "users": 102
+            "users": 107
         },
         {
             "source": "kakaotalk / community",
-            "users": 48
+            "users": 52
         },
         {
             "source": "instagram / advertisement",
@@ -57,7 +57,7 @@
         },
         {
             "source": "(direct) / (none)",
-            "users": 26
+            "users": 27
         },
         {
             "source": "instagram / profile",
@@ -65,7 +65,7 @@
         },
         {
             "source": "kakaotalk / message",
-            "users": 13
+            "users": 16
         },
         {
             "source": "(not set)",
@@ -73,6 +73,10 @@
         },
         {
             "source": "instagram_story / social",
+            "users": 7
+        },
+        {
+            "source": "linkedin / social",
             "users": 7
         },
         {
@@ -92,19 +96,15 @@
             "users": 4
         },
         {
+            "source": "newsletter / post",
+            "users": 4
+        },
+        {
             "source": "instagram / messenger",
             "users": 3
         },
         {
             "source": "linkedin / community",
-            "users": 3
-        },
-        {
-            "source": "linkedin / social",
-            "users": 3
-        },
-        {
-            "source": "newsletter / post",
             "users": 3
         },
         {
