@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-03-02T01:08:47.716615",
+    "last_updated": "2026-03-03T01:10:42.524887",
     "ab_available": true,
     "totals": {
-        "views": 670,
-        "scroll_25": 449,
-        "scroll_50": 336,
-        "scroll_75": 224,
-        "scroll_100": 112,
+        "views": 679,
+        "scroll_25": 455,
+        "scroll_50": 341,
+        "scroll_75": 227,
+        "scroll_100": 113,
         "clicks": 123,
         "leads": 6,
-        "time_events": 455,
-        "avg_session_duration_sec": 179
+        "time_events": 462,
+        "avg_session_duration_sec": 181
     },
     "ab_test": {
         "A": {
-            "views": 147,
+            "views": 149,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 26,
             "leads": 5,
-            "time_events": 99
+            "time_events": 100
         },
         "B": {
-            "views": 126,
+            "views": 132,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 22,
             "leads": 1,
-            "time_events": 85
+            "time_events": 91
         }
     },
     "channels": [
         {
             "source": "instagram / social_ads",
-            "users": 315
+            "users": 316
         },
         {
             "source": "kakaotalk / messenger",
@@ -45,7 +45,7 @@
         },
         {
             "source": "kakaotalk / community",
-            "users": 76
+            "users": 78
         },
         {
             "source": "instagram / advertisement",
@@ -53,7 +53,7 @@
         },
         {
             "source": "instagram / profile",
-            "users": 30
+            "users": 31
         },
         {
             "source": "instagram_ads / social",
@@ -69,11 +69,11 @@
         },
         {
             "source": "newsletter / post",
-            "users": 16
+            "users": 19
         },
         {
             "source": "(not set)",
-            "users": 13
+            "users": 14
         },
         {
             "source": "threads / post",
@@ -93,7 +93,7 @@
         },
         {
             "source": "linkedin / post",
-            "users": 6
+            "users": 7
         },
         {
             "source": "message / waitinglist",
