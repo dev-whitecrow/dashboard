@@ -1,37 +1,37 @@
 {
-    "last_updated": "2026-03-04T01:07:00.535267",
+    "last_updated": "2026-03-05T01:09:22.202809",
     "ab_available": true,
     "totals": {
-        "views": 683,
-        "scroll_25": 457,
-        "scroll_50": 342,
-        "scroll_75": 228,
-        "scroll_100": 114,
+        "views": 687,
+        "scroll_25": 461,
+        "scroll_50": 345,
+        "scroll_75": 230,
+        "scroll_100": 115,
         "clicks": 126,
         "leads": 8,
-        "time_events": 465,
-        "avg_session_duration_sec": 181
+        "time_events": 467,
+        "avg_session_duration_sec": 184
     },
     "ab_test": {
         "A": {
-            "views": 152,
+            "views": 156,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 29,
             "leads": 7,
-            "time_events": 103
+            "time_events": 104
         },
         "B": {
-            "views": 133,
+            "views": 135,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 22,
             "leads": 1,
-            "time_events": 92
+            "time_events": 93
         }
     },
     "channels": [
@@ -41,18 +41,18 @@
         },
         {
             "source": "kakaotalk / messenger",
-            "users": 110
+            "users": 111
         },
         {
             "source": "kakaotalk / community",
             "users": 78
         },
         {
-            "source": "instagram / advertisement",
-            "users": 32
+            "source": "instagram / profile",
+            "users": 33
         },
         {
-            "source": "instagram / profile",
+            "source": "instagram / advertisement",
             "users": 32
         },
         {
@@ -76,12 +76,12 @@
             "users": 14
         },
         {
-            "source": "threads / post",
-            "users": 13
+            "source": "linkedin / social",
+            "users": 14
         },
         {
-            "source": "linkedin / social",
-            "users": 12
+            "source": "threads / post",
+            "users": 13
         },
         {
             "source": "eo / post",
