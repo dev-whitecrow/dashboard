@@ -1,15 +1,15 @@
 {
-    "last_updated": "2026-03-06T01:13:26.680797",
+    "last_updated": "2026-03-07T01:05:02.826542",
     "ab_available": true,
     "totals": {
-        "views": 688,
-        "scroll_25": 462,
-        "scroll_50": 346,
-        "scroll_75": 231,
-        "scroll_100": 115,
-        "clicks": 127,
+        "views": 692,
+        "scroll_25": 464,
+        "scroll_50": 348,
+        "scroll_75": 232,
+        "scroll_100": 116,
+        "clicks": 129,
         "leads": 8,
-        "time_events": 468,
+        "time_events": 472,
         "avg_session_duration_sec": 183
     },
     "ab_test": {
@@ -19,19 +19,19 @@
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 29,
+            "clicks": 30,
             "leads": 7,
-            "time_events": 105
+            "time_events": 106
         },
         "B": {
-            "views": 135,
+            "views": 137,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 23,
+            "clicks": 24,
             "leads": 1,
-            "time_events": 93
+            "time_events": 96
         }
     },
     "channels": [
@@ -45,11 +45,11 @@
         },
         {
             "source": "kakaotalk / community",
-            "users": 79
+            "users": 80
         },
         {
             "source": "instagram / profile",
-            "users": 33
+            "users": 34
         },
         {
             "source": "instagram / advertisement",
@@ -72,16 +72,16 @@
             "users": 20
         },
         {
+            "source": "linkedin / social",
+            "users": 15
+        },
+        {
             "source": "(not set)",
             "users": 14
         },
         {
-            "source": "linkedin / social",
-            "users": 14
-        },
-        {
             "source": "threads / post",
-            "users": 13
+            "users": 14
         },
         {
             "source": "eo / post",
