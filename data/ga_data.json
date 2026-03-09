@@ -1,8 +1,8 @@
 {
-    "last_updated": "2026-03-08T01:09:39.693673",
+    "last_updated": "2026-03-09T01:09:51.394581",
     "ab_available": true,
     "totals": {
-        "views": 696,
+        "views": 698,
         "scroll_25": 466,
         "scroll_50": 349,
         "scroll_75": 233,
@@ -24,14 +24,14 @@
             "time_events": 110
         },
         "B": {
-            "views": 138,
+            "views": 140,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 24,
             "leads": 1,
-            "time_events": 96
+            "time_events": 97
         }
     },
     "channels": [
@@ -41,7 +41,7 @@
         },
         {
             "source": "kakaotalk / messenger",
-            "users": 111
+            "users": 112
         },
         {
             "source": "kakaotalk / community",
@@ -120,6 +120,10 @@
             "users": 3
         },
         {
+            "source": "ig_text_feed_profile / post",
+            "users": 2
+        },
+        {
             "source": "ig_text_post_permalink / post",
             "users": 2
         },
@@ -137,10 +141,6 @@
         },
         {
             "source": "google / organic",
-            "users": 1
-        },
-        {
-            "source": "ig_text_feed_profile / post",
             "users": 1
         },
         {
