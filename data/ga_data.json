@@ -1,20 +1,20 @@
 {
-    "last_updated": "2026-03-10T01:04:20.211582",
+    "last_updated": "2026-03-11T01:05:19.466729",
     "ab_available": true,
     "totals": {
-        "views": 700,
-        "scroll_25": 467,
-        "scroll_50": 350,
-        "scroll_75": 233,
-        "scroll_100": 116,
+        "views": 702,
+        "scroll_25": 469,
+        "scroll_50": 351,
+        "scroll_75": 234,
+        "scroll_100": 117,
         "clicks": 131,
         "leads": 8,
-        "time_events": 477,
-        "avg_session_duration_sec": 187
+        "time_events": 478,
+        "avg_session_duration_sec": 186
     },
     "ab_test": {
         "A": {
-            "views": 161,
+            "views": 162,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
@@ -24,14 +24,14 @@
             "time_events": 110
         },
         "B": {
-            "views": 141,
+            "views": 143,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 25,
             "leads": 1,
-            "time_events": 97
+            "time_events": 98
         }
     },
     "channels": [
@@ -49,7 +49,7 @@
         },
         {
             "source": "instagram / profile",
-            "users": 37
+            "users": 38
         },
         {
             "source": "instagram / advertisement",
@@ -100,16 +100,20 @@
             "users": 6
         },
         {
+            "source": "linkedin / (not set)",
+            "users": 5
+        },
+        {
             "source": "tally.so / referral",
             "users": 5
         },
         {
-            "source": "linkedin / (not set)",
+            "source": "maily / email",
             "users": 4
         },
         {
-            "source": "maily / email",
-            "users": 4
+            "source": "ig_text_feed_profile / post",
+            "users": 3
         },
         {
             "source": "instagram / messenger",
@@ -118,10 +122,6 @@
         {
             "source": "linkedin / community",
             "users": 3
-        },
-        {
-            "source": "ig_text_feed_profile / post",
-            "users": 2
         },
         {
             "source": "ig_text_post_permalink / post",
