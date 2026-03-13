@@ -1,37 +1,37 @@
 {
-    "last_updated": "2026-03-12T01:02:13.231247",
+    "last_updated": "2026-03-13T01:07:35.690027",
     "ab_available": true,
     "totals": {
-        "views": 707,
-        "scroll_25": 471,
-        "scroll_50": 353,
-        "scroll_75": 235,
-        "scroll_100": 117,
-        "clicks": 131,
+        "views": 714,
+        "scroll_25": 477,
+        "scroll_50": 357,
+        "scroll_75": 238,
+        "scroll_100": 119,
+        "clicks": 133,
         "leads": 8,
-        "time_events": 481,
-        "avg_session_duration_sec": 185
+        "time_events": 485,
+        "avg_session_duration_sec": 184
     },
     "ab_test": {
         "A": {
-            "views": 166,
+            "views": 168,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 31,
             "leads": 7,
-            "time_events": 111
+            "time_events": 112
         },
         "B": {
-            "views": 145,
+            "views": 148,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 25,
+            "clicks": 27,
             "leads": 1,
-            "time_events": 100
+            "time_events": 103
         }
     },
     "channels": [
@@ -56,15 +56,19 @@
             "users": 32
         },
         {
+            "source": "(direct) / (none)",
+            "users": 30
+        },
+        {
             "source": "instagram_ads / social",
             "users": 30
         },
         {
-            "source": "(direct) / (none)",
-            "users": 29
+            "source": "kakaotalk / message",
+            "users": 23
         },
         {
-            "source": "kakaotalk / message",
+            "source": "threads / post",
             "users": 23
         },
         {
@@ -72,16 +76,16 @@
             "users": 20
         },
         {
-            "source": "threads / post",
-            "users": 18
-        },
-        {
             "source": "linkedin / social",
             "users": 17
         },
         {
             "source": "(not set)",
-            "users": 14
+            "users": 15
+        },
+        {
+            "source": "linkedin / post",
+            "users": 8
         },
         {
             "source": "eo / post",
@@ -89,10 +93,6 @@
         },
         {
             "source": "instagram_story / social",
-            "users": 7
-        },
-        {
-            "source": "linkedin / post",
             "users": 7
         },
         {
