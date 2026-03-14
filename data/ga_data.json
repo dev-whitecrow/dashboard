@@ -1,11 +1,11 @@
 {
-    "last_updated": "2026-03-13T01:07:35.690027",
+    "last_updated": "2026-03-14T01:07:32.065661",
     "ab_available": true,
     "totals": {
-        "views": 714,
-        "scroll_25": 477,
-        "scroll_50": 357,
-        "scroll_75": 238,
+        "views": 715,
+        "scroll_25": 478,
+        "scroll_50": 358,
+        "scroll_75": 239,
         "scroll_100": 119,
         "clicks": 133,
         "leads": 8,
@@ -14,7 +14,7 @@
     },
     "ab_test": {
         "A": {
-            "views": 168,
+            "views": 170,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
@@ -24,7 +24,7 @@
             "time_events": 112
         },
         "B": {
-            "views": 148,
+            "views": 149,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
@@ -64,11 +64,11 @@
             "users": 30
         },
         {
-            "source": "kakaotalk / message",
-            "users": 23
+            "source": "threads / post",
+            "users": 24
         },
         {
-            "source": "threads / post",
+            "source": "kakaotalk / message",
             "users": 23
         },
         {
