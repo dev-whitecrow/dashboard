@@ -1,37 +1,37 @@
 {
-    "last_updated": "2026-03-15T01:18:46.689782",
+    "last_updated": "2026-03-16T01:18:51.323326",
     "ab_available": true,
     "totals": {
-        "views": 717,
-        "scroll_25": 479,
-        "scroll_50": 359,
+        "views": 716,
+        "scroll_25": 478,
+        "scroll_50": 358,
         "scroll_75": 239,
         "scroll_100": 119,
         "clicks": 134,
         "leads": 8,
-        "time_events": 488,
-        "avg_session_duration_sec": 185
+        "time_events": 486,
+        "avg_session_duration_sec": 183
     },
     "ab_test": {
         "A": {
-            "views": 173,
+            "views": 174,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 32,
             "leads": 7,
-            "time_events": 115
+            "time_events": 117
         },
         "B": {
-            "views": 149,
+            "views": 150,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 27,
             "leads": 1,
-            "time_events": 103
+            "time_events": 105
         }
     },
     "channels": [
@@ -49,19 +49,19 @@
         },
         {
             "source": "instagram / profile",
-            "users": 39
+            "users": 40
         },
         {
             "source": "instagram / advertisement",
             "users": 32
         },
         {
-            "source": "(direct) / (none)",
+            "source": "instagram_ads / social",
             "users": 30
         },
         {
-            "source": "instagram_ads / social",
-            "users": 30
+            "source": "(direct) / (none)",
+            "users": 27
         },
         {
             "source": "threads / post",
@@ -77,7 +77,7 @@
         },
         {
             "source": "linkedin / social",
-            "users": 17
+            "users": 18
         },
         {
             "source": "(not set)",
@@ -108,10 +108,6 @@
             "users": 5
         },
         {
-            "source": "maily / email",
-            "users": 4
-        },
-        {
             "source": "ig_text_feed_profile / post",
             "users": 3
         },
@@ -129,6 +125,10 @@
         },
         {
             "source": "linkedin / message",
+            "users": 2
+        },
+        {
+            "source": "maily / email",
             "users": 2
         },
         {
