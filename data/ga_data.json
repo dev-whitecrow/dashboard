@@ -1,37 +1,37 @@
 {
-    "last_updated": "2026-03-16T01:18:51.323326",
+    "last_updated": "2026-03-17T01:09:53.278634",
     "ab_available": true,
     "totals": {
-        "views": 716,
-        "scroll_25": 478,
-        "scroll_50": 358,
-        "scroll_75": 239,
-        "scroll_100": 119,
-        "clicks": 134,
+        "views": 718,
+        "scroll_25": 480,
+        "scroll_50": 360,
+        "scroll_75": 240,
+        "scroll_100": 120,
+        "clicks": 135,
         "leads": 8,
-        "time_events": 486,
-        "avg_session_duration_sec": 183
+        "time_events": 488,
+        "avg_session_duration_sec": 185
     },
     "ab_test": {
         "A": {
-            "views": 174,
+            "views": 173,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 32,
+            "clicks": 33,
             "leads": 7,
-            "time_events": 117
+            "time_events": 116
         },
         "B": {
-            "views": 150,
+            "views": 151,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 27,
+            "clicks": 28,
             "leads": 1,
-            "time_events": 105
+            "time_events": 106
         }
     },
     "channels": [
@@ -61,7 +61,7 @@
         },
         {
             "source": "(direct) / (none)",
-            "users": 27
+            "users": 28
         },
         {
             "source": "threads / post",
@@ -85,7 +85,7 @@
         },
         {
             "source": "linkedin / post",
-            "users": 8
+            "users": 10
         },
         {
             "source": "eo / post",
