@@ -1,37 +1,37 @@
 {
-    "last_updated": "2026-03-17T01:09:53.278634",
+    "last_updated": "2026-03-18T01:14:26.423043",
     "ab_available": true,
     "totals": {
-        "views": 718,
-        "scroll_25": 480,
+        "views": 724,
+        "scroll_25": 481,
         "scroll_50": 360,
         "scroll_75": 240,
         "scroll_100": 120,
-        "clicks": 135,
+        "clicks": 137,
         "leads": 8,
-        "time_events": 488,
-        "avg_session_duration_sec": 185
+        "time_events": 494,
+        "avg_session_duration_sec": 182
     },
     "ab_test": {
         "A": {
-            "views": 173,
+            "views": 175,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 33,
+            "clicks": 34,
             "leads": 7,
-            "time_events": 116
+            "time_events": 117
         },
         "B": {
-            "views": 151,
+            "views": 157,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 28,
+            "clicks": 30,
             "leads": 1,
-            "time_events": 106
+            "time_events": 112
         }
     },
     "channels": [
@@ -49,11 +49,15 @@
         },
         {
             "source": "instagram / profile",
-            "users": 40
+            "users": 43
         },
         {
             "source": "instagram / advertisement",
             "users": 32
+        },
+        {
+            "source": "threads / post",
+            "users": 31
         },
         {
             "source": "instagram_ads / social",
@@ -61,10 +65,6 @@
         },
         {
             "source": "(direct) / (none)",
-            "users": 28
-        },
-        {
-            "source": "threads / post",
             "users": 27
         },
         {
@@ -81,7 +81,7 @@
         },
         {
             "source": "(not set)",
-            "users": 15
+            "users": 16
         },
         {
             "source": "linkedin / post",
@@ -141,10 +141,6 @@
         },
         {
             "source": "google / organic",
-            "users": 1
-        },
-        {
-            "source": "kakaotalk_plusfriend / social",
             "users": 1
         },
         {
