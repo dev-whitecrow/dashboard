@@ -1,30 +1,30 @@
 {
-    "last_updated": "2026-03-18T01:14:26.423043",
+    "last_updated": "2026-03-19T01:13:37.656932",
     "ab_available": true,
     "totals": {
-        "views": 724,
-        "scroll_25": 481,
+        "views": 720,
+        "scroll_25": 480,
         "scroll_50": 360,
         "scroll_75": 240,
         "scroll_100": 120,
-        "clicks": 137,
+        "clicks": 134,
         "leads": 8,
-        "time_events": 494,
+        "time_events": 491,
         "avg_session_duration_sec": 182
     },
     "ab_test": {
         "A": {
-            "views": 175,
+            "views": 177,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 34,
             "leads": 7,
-            "time_events": 117
+            "time_events": 119
         },
         "B": {
-            "views": 157,
+            "views": 158,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
@@ -56,16 +56,16 @@
             "users": 32
         },
         {
-            "source": "threads / post",
-            "users": 31
-        },
-        {
             "source": "instagram_ads / social",
             "users": 30
         },
         {
+            "source": "threads / post",
+            "users": 30
+        },
+        {
             "source": "(direct) / (none)",
-            "users": 27
+            "users": 26
         },
         {
             "source": "kakaotalk / message",
@@ -85,7 +85,7 @@
         },
         {
             "source": "linkedin / post",
-            "users": 10
+            "users": 9
         },
         {
             "source": "eo / post",
@@ -96,16 +96,16 @@
             "users": 7
         },
         {
-            "source": "message / waitinglist",
-            "users": 6
-        },
-        {
             "source": "linkedin / (not set)",
             "users": 5
         },
         {
             "source": "tally.so / referral",
             "users": 5
+        },
+        {
+            "source": "message / waitinglist",
+            "users": 4
         },
         {
             "source": "ig_text_feed_profile / post",
@@ -128,10 +128,6 @@
             "users": 2
         },
         {
-            "source": "maily / email",
-            "users": 2
-        },
-        {
             "source": "youtube / profile",
             "users": 2
         },
@@ -145,6 +141,10 @@
         },
         {
             "source": "linkedin / newsletter",
+            "users": 1
+        },
+        {
+            "source": "maily / email",
             "users": 1
         },
         {
