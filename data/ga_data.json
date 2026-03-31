@@ -1,37 +1,37 @@
 {
-    "last_updated": "2026-03-30T01:21:56.112750",
+    "last_updated": "2026-03-31T01:18:58.026922",
     "ab_available": true,
     "totals": {
-        "views": 133,
-        "scroll_25": 85,
-        "scroll_50": 63,
-        "scroll_75": 42,
-        "scroll_100": 21,
-        "clicks": 30,
+        "views": 121,
+        "scroll_25": 76,
+        "scroll_50": 57,
+        "scroll_75": 38,
+        "scroll_100": 19,
+        "clicks": 28,
         "leads": 2,
-        "time_events": 101,
-        "avg_session_duration_sec": 226
+        "time_events": 97,
+        "avg_session_duration_sec": 231
     },
     "ab_test": {
         "A": {
-            "views": 66,
+            "views": 57,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 16,
+            "clicks": 14,
             "leads": 2,
-            "time_events": 46
+            "time_events": 44
         },
         "B": {
-            "views": 67,
+            "views": 64,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 14,
             "leads": 0,
-            "time_events": 55
+            "time_events": 53
         }
     },
     "channels": [
@@ -41,15 +41,11 @@
         },
         {
             "source": "threads / post",
-            "users": 32
+            "users": 30
         },
         {
             "source": "kakaotalk / community",
             "users": 12
-        },
-        {
-            "source": "instagram / social_ads",
-            "users": 9
         },
         {
             "source": "(direct) / (none)",
@@ -64,19 +60,15 @@
             "users": 8
         },
         {
-            "source": "linkedin / post",
-            "users": 7
-        },
-        {
             "source": "newsletter / post",
             "users": 7
         },
         {
-            "source": "kakaotalk / message",
-            "users": 5
+            "source": "linkedin / post",
+            "users": 6
         },
         {
-            "source": "ig_text_feed_profile / post",
+            "source": "instagram / social_ads",
             "users": 4
         },
         {
@@ -88,7 +80,15 @@
             "users": 3
         },
         {
+            "source": "ig_text_feed_profile / post",
+            "users": 3
+        },
+        {
             "source": "ig_text_post_permalink / post",
+            "users": 1
+        },
+        {
+            "source": "kakaotalk / message",
             "users": 1
         },
         {
