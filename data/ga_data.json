@@ -1,37 +1,37 @@
 {
-    "last_updated": "2026-04-07T01:19:53.340997",
+    "last_updated": "2026-04-08T01:20:41.108977",
     "ab_available": true,
     "totals": {
-        "views": 107,
-        "scroll_25": 66,
-        "scroll_50": 49,
-        "scroll_75": 33,
-        "scroll_100": 16,
-        "clicks": 24,
-        "leads": 0,
-        "time_events": 87,
-        "avg_session_duration_sec": 206
+        "views": 108,
+        "scroll_25": 68,
+        "scroll_50": 51,
+        "scroll_75": 34,
+        "scroll_100": 17,
+        "clicks": 26,
+        "leads": 1,
+        "time_events": 90,
+        "avg_session_duration_sec": 203
     },
     "ab_test": {
         "A": {
-            "views": 45,
+            "views": 47,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 10,
-            "leads": 0,
-            "time_events": 37
+            "clicks": 11,
+            "leads": 1,
+            "time_events": 39
         },
         "B": {
-            "views": 62,
+            "views": 61,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 14,
+            "clicks": 15,
             "leads": 0,
-            "time_events": 50
+            "time_events": 51
         }
     },
     "channels": [
@@ -41,7 +41,7 @@
         },
         {
             "source": "instagram / profile",
-            "users": 28
+            "users": 30
         },
         {
             "source": "(not set)",
@@ -72,10 +72,6 @@
             "users": 2
         },
         {
-            "source": "kakaotalk / messenger",
-            "users": 2
-        },
-        {
             "source": "ig_text_post_permalink / post",
             "users": 1
         },
@@ -88,7 +84,15 @@
             "users": 1
         },
         {
+            "source": "kakaotalk / messenger",
+            "users": 1
+        },
+        {
             "source": "linkedin / (not set)",
+            "users": 1
+        },
+        {
+            "source": "tally.so / referral",
             "users": 1
         }
     ]
