@@ -1,51 +1,51 @@
 {
-    "last_updated": "2026-04-12T01:25:04.585227",
+    "last_updated": "2026-04-13T01:27:26.047363",
     "ab_available": true,
     "totals": {
-        "views": 112,
-        "scroll_25": 72,
-        "scroll_50": 54,
-        "scroll_75": 36,
-        "scroll_100": 18,
+        "views": 114,
+        "scroll_25": 71,
+        "scroll_50": 53,
+        "scroll_75": 35,
+        "scroll_100": 17,
         "clicks": 28,
         "leads": 1,
-        "time_events": 99,
-        "avg_session_duration_sec": 184
+        "time_events": 103,
+        "avg_session_duration_sec": 179
     },
     "ab_test": {
         "A": {
-            "views": 51,
+            "views": 52,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 15,
             "leads": 1,
-            "time_events": 47
+            "time_events": 49
         },
         "B": {
-            "views": 61,
+            "views": 62,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 13,
             "leads": 0,
-            "time_events": 52
+            "time_events": 54
         }
     },
     "channels": [
+        {
+            "source": "(not set)",
+            "users": 33
+        },
         {
             "source": "instagram / profile",
             "users": 32
         },
         {
-            "source": "(not set)",
-            "users": 31
-        },
-        {
             "source": "threads / post",
-            "users": 27
+            "users": 28
         },
         {
             "source": "(direct) / (none)",
@@ -85,6 +85,10 @@
         },
         {
             "source": "tally.so / referral",
+            "users": 1
+        },
+        {
+            "source": "youtube / profile",
             "users": 1
         }
     ]
