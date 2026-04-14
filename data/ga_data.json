@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-04-13T01:27:26.047363",
+    "last_updated": "2026-04-14T01:25:25.538620",
     "ab_available": true,
     "totals": {
         "views": 114,
-        "scroll_25": 71,
-        "scroll_50": 53,
-        "scroll_75": 35,
-        "scroll_100": 17,
+        "scroll_25": 72,
+        "scroll_50": 54,
+        "scroll_75": 36,
+        "scroll_100": 18,
         "clicks": 28,
         "leads": 1,
         "time_events": 103,
-        "avg_session_duration_sec": 179
+        "avg_session_duration_sec": 159
     },
     "ab_test": {
         "A": {
-            "views": 52,
+            "views": 50,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 15,
+            "clicks": 14,
             "leads": 1,
-            "time_events": 49
+            "time_events": 47
         },
         "B": {
-            "views": 62,
+            "views": 64,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 13,
+            "clicks": 14,
             "leads": 0,
-            "time_events": 54
+            "time_events": 56
         }
     },
     "channels": [
         {
             "source": "(not set)",
-            "users": 33
+            "users": 36
         },
         {
             "source": "instagram / profile",
@@ -45,15 +45,15 @@
         },
         {
             "source": "threads / post",
-            "users": 28
+            "users": 25
         },
         {
             "source": "(direct) / (none)",
-            "users": 8
+            "users": 9
         },
         {
             "source": "linkedin / post",
-            "users": 7
+            "users": 8
         },
         {
             "source": "eo / post",
@@ -77,10 +77,6 @@
         },
         {
             "source": "instagram / content",
-            "users": 1
-        },
-        {
-            "source": "kakaotalk / message",
             "users": 1
         },
         {
