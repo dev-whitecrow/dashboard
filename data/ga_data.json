@@ -1,27 +1,27 @@
 {
-    "last_updated": "2026-04-14T01:25:25.538620",
+    "last_updated": "2026-04-15T01:21:59.306040",
     "ab_available": true,
     "totals": {
-        "views": 114,
+        "views": 115,
         "scroll_25": 72,
         "scroll_50": 54,
         "scroll_75": 36,
         "scroll_100": 18,
         "clicks": 28,
         "leads": 1,
-        "time_events": 103,
-        "avg_session_duration_sec": 159
+        "time_events": 104,
+        "avg_session_duration_sec": 156
     },
     "ab_test": {
         "A": {
-            "views": 50,
+            "views": 51,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 14,
             "leads": 1,
-            "time_events": 47
+            "time_events": 48
         },
         "B": {
             "views": 64,
@@ -37,11 +37,11 @@
     "channels": [
         {
             "source": "(not set)",
-            "users": 36
+            "users": 38
         },
         {
             "source": "instagram / profile",
-            "users": 32
+            "users": 31
         },
         {
             "source": "threads / post",
@@ -49,7 +49,7 @@
         },
         {
             "source": "(direct) / (none)",
-            "users": 9
+            "users": 10
         },
         {
             "source": "linkedin / post",
@@ -64,10 +64,6 @@
             "users": 3
         },
         {
-            "source": "linkedin / social",
-            "users": 2
-        },
-        {
             "source": "ig_text_feed_profile / post",
             "users": 1
         },
@@ -77,6 +73,10 @@
         },
         {
             "source": "instagram / content",
+            "users": 1
+        },
+        {
+            "source": "linkedin / social",
             "users": 1
         },
         {
