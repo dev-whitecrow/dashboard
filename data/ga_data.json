@@ -1,37 +1,37 @@
 {
-    "last_updated": "2026-04-16T01:27:51.837749",
+    "last_updated": "2026-04-17T01:25:15.891803",
     "ab_available": true,
     "totals": {
-        "views": 120,
-        "scroll_25": 76,
-        "scroll_50": 57,
-        "scroll_75": 38,
-        "scroll_100": 19,
-        "clicks": 27,
+        "views": 114,
+        "scroll_25": 75,
+        "scroll_50": 56,
+        "scroll_75": 37,
+        "scroll_100": 18,
+        "clicks": 25,
         "leads": 1,
-        "time_events": 107,
-        "avg_session_duration_sec": 143
+        "time_events": 101,
+        "avg_session_duration_sec": 193
     },
     "ab_test": {
         "A": {
-            "views": 51,
+            "views": 49,
+            "scroll_25": 0,
+            "scroll_50": 0,
+            "scroll_75": 0,
+            "scroll_100": 0,
+            "clicks": 12,
+            "leads": 1,
+            "time_events": 46
+        },
+        "B": {
+            "views": 65,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 13,
-            "leads": 1,
-            "time_events": 48
-        },
-        "B": {
-            "views": 69,
-            "scroll_25": 0,
-            "scroll_50": 0,
-            "scroll_75": 0,
-            "scroll_100": 0,
-            "clicks": 14,
             "leads": 0,
-            "time_events": 59
+            "time_events": 55
         }
     },
     "channels": [
@@ -41,11 +41,11 @@
         },
         {
             "source": "instagram / profile",
-            "users": 32
+            "users": 29
         },
         {
             "source": "threads / post",
-            "users": 25
+            "users": 22
         },
         {
             "source": "(direct) / (none)",
@@ -62,6 +62,10 @@
         {
             "source": "kakaotalk / community",
             "users": 3
+        },
+        {
+            "source": "youtube / profile",
+            "users": 2
         },
         {
             "source": "ig_text_feed_profile / post",
@@ -81,10 +85,6 @@
         },
         {
             "source": "tally.so / referral",
-            "users": 1
-        },
-        {
-            "source": "youtube / profile",
             "users": 1
         }
     ]
