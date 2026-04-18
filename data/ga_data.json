@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-04-17T01:25:15.891803",
+    "last_updated": "2026-04-18T01:18:53.009043",
     "ab_available": true,
     "totals": {
-        "views": 114,
-        "scroll_25": 75,
-        "scroll_50": 56,
-        "scroll_75": 37,
+        "views": 112,
+        "scroll_25": 73,
+        "scroll_50": 54,
+        "scroll_75": 36,
         "scroll_100": 18,
-        "clicks": 25,
+        "clicks": 24,
         "leads": 1,
-        "time_events": 101,
-        "avg_session_duration_sec": 193
+        "time_events": 99,
+        "avg_session_duration_sec": 203
     },
     "ab_test": {
         "A": {
-            "views": 49,
+            "views": 48,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 12,
             "leads": 1,
-            "time_events": 46
+            "time_events": 45
         },
         "B": {
-            "views": 65,
+            "views": 64,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 13,
+            "clicks": 12,
             "leads": 0,
-            "time_events": 55
+            "time_events": 54
         }
     },
     "channels": [
         {
             "source": "(not set)",
-            "users": 38
+            "users": 37
         },
         {
             "source": "instagram / profile",
@@ -45,7 +45,7 @@
         },
         {
             "source": "threads / post",
-            "users": 22
+            "users": 21
         },
         {
             "source": "(direct) / (none)",
