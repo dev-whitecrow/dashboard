@@ -1,16 +1,16 @@
 {
-    "last_updated": "2026-04-18T01:18:53.009043",
+    "last_updated": "2026-04-19T01:28:36.518953",
     "ab_available": true,
     "totals": {
         "views": 112,
-        "scroll_25": 73,
+        "scroll_25": 72,
         "scroll_50": 54,
         "scroll_75": 36,
         "scroll_100": 18,
         "clicks": 24,
         "leads": 1,
         "time_events": 99,
-        "avg_session_duration_sec": 203
+        "avg_session_duration_sec": 205
     },
     "ab_test": {
         "A": {
@@ -37,11 +37,11 @@
     "channels": [
         {
             "source": "(not set)",
-            "users": 37
+            "users": 38
         },
         {
             "source": "instagram / profile",
-            "users": 29
+            "users": 28
         },
         {
             "source": "threads / post",
