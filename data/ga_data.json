@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-04-23T01:29:10.339014",
+    "last_updated": "2026-04-24T01:28:30.146833",
     "ab_available": true,
     "totals": {
-        "views": 106,
-        "scroll_25": 71,
-        "scroll_50": 53,
-        "scroll_75": 35,
-        "scroll_100": 17,
-        "clicks": 22,
-        "leads": 1,
-        "time_events": 95,
-        "avg_session_duration_sec": 213
+        "views": 102,
+        "scroll_25": 67,
+        "scroll_50": 50,
+        "scroll_75": 33,
+        "scroll_100": 16,
+        "clicks": 19,
+        "leads": 4,
+        "time_events": 92,
+        "avg_session_duration_sec": 187
     },
     "ab_test": {
         "A": {
-            "views": 47,
+            "views": 46,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 12,
-            "leads": 1,
-            "time_events": 46
+            "clicks": 11,
+            "leads": 2,
+            "time_events": 45
         },
         "B": {
-            "views": 59,
+            "views": 56,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 10,
+            "clicks": 8,
             "leads": 0,
-            "time_events": 49
+            "time_events": 47
         }
     },
     "channels": [
         {
             "source": "(not set)",
-            "users": 36
+            "users": 35
         },
         {
             "source": "instagram / profile",
@@ -49,11 +49,11 @@
         },
         {
             "source": "(direct) / (none)",
-            "users": 13
+            "users": 14
         },
         {
             "source": "linkedin / post",
-            "users": 12
+            "users": 11
         },
         {
             "source": "eo / post",
@@ -68,11 +68,11 @@
             "users": 2
         },
         {
-            "source": "ig_text_feed_profile / post",
+            "source": "google / organic",
             "users": 1
         },
         {
-            "source": "ig_text_post_permalink / post",
+            "source": "ig_text_feed_profile / post",
             "users": 1
         },
         {
