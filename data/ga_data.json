@@ -1,37 +1,37 @@
 {
-    "last_updated": "2026-04-25T01:21:30.463706",
+    "last_updated": "2026-04-26T01:42:22.563910",
     "ab_available": true,
     "totals": {
-        "views": 95,
-        "scroll_25": 62,
-        "scroll_50": 46,
-        "scroll_75": 31,
+        "views": 87,
+        "scroll_25": 61,
+        "scroll_50": 45,
+        "scroll_75": 30,
         "scroll_100": 15,
         "clicks": 17,
         "leads": 4,
-        "time_events": 86,
-        "avg_session_duration_sec": 173
+        "time_events": 77,
+        "avg_session_duration_sec": 178
     },
     "ab_test": {
         "A": {
-            "views": 44,
+            "views": 41,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 10,
             "leads": 2,
-            "time_events": 44
+            "time_events": 40
         },
         "B": {
-            "views": 51,
+            "views": 46,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 7,
             "leads": 0,
-            "time_events": 42
+            "time_events": 37
         }
     },
     "channels": [
@@ -41,19 +41,19 @@
         },
         {
             "source": "instagram / profile",
-            "users": 20
-        },
-        {
-            "source": "threads / post",
-            "users": 19
+            "users": 18
         },
         {
             "source": "(direct) / (none)",
             "users": 13
         },
         {
+            "source": "threads / post",
+            "users": 13
+        },
+        {
             "source": "linkedin / post",
-            "users": 11
+            "users": 10
         },
         {
             "source": "kakaotalk / community",
