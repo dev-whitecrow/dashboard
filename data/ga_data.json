@@ -1,47 +1,47 @@
 {
-    "last_updated": "2026-04-26T01:42:22.563910",
+    "last_updated": "2026-04-27T01:45:43.981184",
     "ab_available": true,
     "totals": {
-        "views": 87,
-        "scroll_25": 61,
-        "scroll_50": 45,
-        "scroll_75": 30,
-        "scroll_100": 15,
-        "clicks": 17,
+        "views": 81,
+        "scroll_25": 55,
+        "scroll_50": 41,
+        "scroll_75": 27,
+        "scroll_100": 13,
+        "clicks": 15,
         "leads": 4,
-        "time_events": 77,
-        "avg_session_duration_sec": 178
+        "time_events": 72,
+        "avg_session_duration_sec": 185
     },
     "ab_test": {
         "A": {
-            "views": 41,
+            "views": 37,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 10,
+            "clicks": 8,
             "leads": 2,
-            "time_events": 40
+            "time_events": 36
         },
         "B": {
-            "views": 46,
+            "views": 44,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 7,
             "leads": 0,
-            "time_events": 37
+            "time_events": 36
         }
     },
     "channels": [
         {
             "source": "(not set)",
-            "users": 35
+            "users": 33
         },
         {
             "source": "instagram / profile",
-            "users": 18
+            "users": 14
         },
         {
             "source": "(direct) / (none)",
@@ -77,10 +77,6 @@
         },
         {
             "source": "kakaotalk / message",
-            "users": 1
-        },
-        {
-            "source": "linkedin / social",
             "users": 1
         },
         {
