@@ -52,7 +52,7 @@ def fetch_ga4_data():
         raise RuntimeError("GA_PROPERTY_ID environment variable not found.")
 
     client = BetaAnalyticsDataClient()
-    date_range = [DateRange(start_date="30daysAgo", end_date="today")]
+    date_range = [DateRange(start_date="14daysAgo", end_date="today")]
     target_events = ["detail_page_view", "scroll_depth", "time_on_page", "cta_click", "generate_lead"]
 
     # 결과 데이터 초기화
