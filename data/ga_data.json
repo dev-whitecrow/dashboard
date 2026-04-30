@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-04-29T06:38:55.958137",
+    "last_updated": "2026-04-30T01:55:14.682747",
     "ab_available": true,
     "totals": {
-        "views": 19,
-        "scroll_25": 14,
-        "scroll_50": 10,
-        "scroll_75": 7,
-        "scroll_100": 3,
+        "views": 13,
+        "scroll_25": 9,
+        "scroll_50": 6,
+        "scroll_75": 4,
+        "scroll_100": 2,
         "clicks": 1,
-        "leads": 3,
-        "time_events": 16,
-        "avg_session_duration_sec": 357
+        "leads": 4,
+        "time_events": 11,
+        "avg_session_duration_sec": 442
     },
     "ab_test": {
         "A": {
-            "views": 6,
+            "views": 5,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 0,
-            "leads": 1,
-            "time_events": 6
+            "leads": 2,
+            "time_events": 5
         },
         "B": {
-            "views": 13,
+            "views": 8,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 1,
             "leads": 0,
-            "time_events": 10
+            "time_events": 6
         }
     },
     "channels": [
         {
             "source": "(direct) / (none)",
-            "users": 9
+            "users": 6
         },
         {
             "source": "linkedin / post",
@@ -45,10 +45,6 @@
         },
         {
             "source": "(not set)",
-            "users": 2
-        },
-        {
-            "source": "instagram / profile",
             "users": 2
         },
         {
@@ -60,15 +56,15 @@
             "users": 1
         },
         {
+            "source": "instagram / profile",
+            "users": 1
+        },
+        {
             "source": "kakaotalk / community",
             "users": 1
         },
         {
             "source": "kakaotalk / message",
-            "users": 1
-        },
-        {
-            "source": "threads / post",
             "users": 1
         },
         {
