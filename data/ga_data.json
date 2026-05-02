@@ -1,16 +1,16 @@
 {
-    "last_updated": "2026-05-01T01:57:09.398209",
+    "last_updated": "2026-05-02T01:45:56.040187",
     "ab_available": true,
     "totals": {
         "views": 10,
-        "scroll_25": 6,
-        "scroll_50": 4,
-        "scroll_75": 3,
+        "scroll_25": 5,
+        "scroll_50": 3,
+        "scroll_75": 2,
         "scroll_100": 1,
         "clicks": 1,
         "leads": 4,
-        "time_events": 10,
-        "avg_session_duration_sec": 227
+        "time_events": 9,
+        "avg_session_duration_sec": 148
     },
     "ab_test": {
         "A": {
@@ -31,7 +31,7 @@
             "scroll_100": 0,
             "clicks": 1,
             "leads": 0,
-            "time_events": 5
+            "time_events": 4
         }
     },
     "channels": [
@@ -53,10 +53,6 @@
         },
         {
             "source": "google / organic",
-            "users": 1
-        },
-        {
-            "source": "instagram / profile",
             "users": 1
         },
         {
