@@ -1,27 +1,27 @@
 {
-    "last_updated": "2026-05-02T01:45:56.040187",
+    "last_updated": "2026-05-03T01:49:14.686572",
     "ab_available": true,
     "totals": {
-        "views": 10,
+        "views": 9,
         "scroll_25": 5,
         "scroll_50": 3,
         "scroll_75": 2,
         "scroll_100": 1,
         "clicks": 1,
         "leads": 4,
-        "time_events": 9,
-        "avg_session_duration_sec": 148
+        "time_events": 8,
+        "avg_session_duration_sec": 126
     },
     "ab_test": {
         "A": {
-            "views": 5,
+            "views": 4,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 0,
             "leads": 2,
-            "time_events": 5
+            "time_events": 4
         },
         "B": {
             "views": 5,
@@ -45,7 +45,7 @@
         },
         {
             "source": "(not set)",
-            "users": 2
+            "users": 1
         },
         {
             "source": "eo / post",
