@@ -12,10 +12,8 @@ from google.analytics.data_v1beta.types import (
     RunReportRequest,
 )
 
-# acts29_gen2.html 페이지 경로 (pagePath 필터용) - thankyou 페이지 포함되도록 .html 제거
-TARGET_PAGE = "/groute-contact/acts29_gen2"
-
-
+# acts29-detail.html & acts29-detail-promo.html 페이지 경로 (pagePath 필터용) - thankyou 페이지 포함되도록 .html 제거
+TARGET_PAGE = "/groute-contact/acts29-detail"
 def make_page_filter():
     """pagePath 필터 생성"""
     return FilterExpression(
