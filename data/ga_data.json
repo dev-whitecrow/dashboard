@@ -1,37 +1,37 @@
 {
-    "last_updated": "2026-05-05T01:50:28.612392",
+    "last_updated": "2026-05-06T01:49:37.540894",
     "ab_available": true,
     "totals": {
-        "views": 296,
-        "scroll_25": 209,
-        "scroll_50": 156,
-        "scroll_75": 104,
-        "scroll_100": 52,
+        "views": 290,
+        "scroll_25": 205,
+        "scroll_50": 153,
+        "scroll_75": 102,
+        "scroll_100": 51,
         "clicks": 49,
         "leads": 0,
-        "time_events": 207,
-        "avg_session_duration_sec": 174
+        "time_events": 204,
+        "avg_session_duration_sec": 143
     },
     "ab_test": {
         "A": {
-            "views": 153,
+            "views": 151,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 23,
             "leads": 0,
-            "time_events": 97
+            "time_events": 98
         },
         "B": {
-            "views": 144,
+            "views": 140,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 26,
             "leads": 0,
-            "time_events": 111
+            "time_events": 107
         }
     },
     "channels": [
@@ -41,23 +41,23 @@
         },
         {
             "source": "linkedin / social",
-            "users": 57
+            "users": 59
         },
         {
             "source": "kakaotalk / bizmessage",
-            "users": 52
+            "users": 42
         },
         {
             "source": "kakaotalk / message",
-            "users": 32
+            "users": 33
         },
         {
             "source": "instagram / social",
-            "users": 24
+            "users": 25
         },
         {
             "source": "instagram / story",
-            "users": 19
+            "users": 20
         },
         {
             "source": "remember / promo",
@@ -73,7 +73,7 @@
         },
         {
             "source": "(not set)",
-            "users": 8
+            "users": 9
         },
         {
             "source": "eo / newsletter",
@@ -85,7 +85,7 @@
         },
         {
             "source": "(direct) / (none)",
-            "users": 4
+            "users": 3
         },
         {
             "source": "kakaotalk / openchat",
@@ -96,16 +96,16 @@
             "users": 3
         },
         {
-            "source": "eo / post",
-            "users": 2
-        },
-        {
             "source": "linkedin / massage",
             "users": 2
         },
         {
             "source": "shalomic / community",
             "users": 2
+        },
+        {
+            "source": "eo / post",
+            "users": 1
         },
         {
             "source": "instagram / profile",
