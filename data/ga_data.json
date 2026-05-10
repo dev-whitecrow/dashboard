@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-09T01:52:44.771197",
+    "last_updated": "2026-05-10T01:52:30.840535",
     "ab_available": true,
     "totals": {
-        "views": 301,
+        "views": 300,
         "scroll_25": 213,
         "scroll_50": 159,
         "scroll_75": 106,
         "scroll_100": 53,
-        "clicks": 52,
+        "clicks": 50,
         "leads": 0,
         "time_events": 209,
-        "avg_session_duration_sec": 88
+        "avg_session_duration_sec": 89
     },
     "ab_test": {
         "A": {
-            "views": 158,
+            "views": 155,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 23,
             "leads": 0,
-            "time_events": 99
+            "time_events": 98
         },
         "B": {
-            "views": 144,
+            "views": 146,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 29,
+            "clicks": 27,
             "leads": 0,
-            "time_events": 111
+            "time_events": 112
         }
     },
     "channels": [
         {
             "source": "linkedin / social",
-            "users": 80
+            "users": 77
         },
         {
             "source": "blind / promo",
@@ -46,6 +46,10 @@
         {
             "source": "instagram / social",
             "users": 29
+        },
+        {
+            "source": "eo / newsletter",
+            "users": 20
         },
         {
             "source": "instagram / story",
@@ -60,10 +64,6 @@
             "users": 20
         },
         {
-            "source": "eo / newsletter",
-            "users": 19
-        },
-        {
             "source": "maily / newsletter",
             "users": 16
         },
@@ -72,23 +72,23 @@
             "users": 12
         },
         {
-            "source": "kakaotalk / message",
-            "users": 10
-        },
-        {
             "source": "okky / promo",
             "users": 9
+        },
+        {
+            "source": "kakaotalk / message",
+            "users": 7
         },
         {
             "source": "(not set)",
             "users": 6
         },
         {
-            "source": "linkedin / massage",
-            "users": 4
+            "source": "newsletter / eo",
+            "users": 5
         },
         {
-            "source": "newsletter / eo",
+            "source": "linkedin / massage",
             "users": 4
         },
         {
