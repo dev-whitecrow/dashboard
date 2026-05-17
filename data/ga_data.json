@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-16T01:56:11.863984",
+    "last_updated": "2026-05-17T01:58:29.679058",
     "ab_available": true,
     "totals": {
-        "views": 157,
-        "scroll_25": 109,
-        "scroll_50": 81,
-        "scroll_75": 54,
-        "scroll_100": 27,
+        "views": 150,
+        "scroll_25": 103,
+        "scroll_50": 77,
+        "scroll_75": 51,
+        "scroll_100": 25,
         "clicks": 24,
         "leads": 0,
-        "time_events": 95,
-        "avg_session_duration_sec": 118
+        "time_events": 93,
+        "avg_session_duration_sec": 122
     },
     "ab_test": {
         "A": {
-            "views": 77,
+            "views": 73,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 9,
             "leads": 0,
-            "time_events": 46
+            "time_events": 45
         },
         "B": {
-            "views": 80,
+            "views": 77,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 15,
             "leads": 0,
-            "time_events": 49
+            "time_events": 48
         }
     },
     "channels": [
         {
             "source": "linkedin / social",
-            "users": 67
+            "users": 61
         },
         {
             "source": "kakaotalk / bizmessage",
@@ -49,7 +49,7 @@
         },
         {
             "source": "instagram / social",
-            "users": 18
+            "users": 17
         },
         {
             "source": "(direct) / (none)",
