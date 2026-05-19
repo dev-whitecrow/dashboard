@@ -1,43 +1,43 @@
 {
-    "last_updated": "2026-05-18T02:10:07.669092",
+    "last_updated": "2026-05-19T02:10:16.590081",
     "ab_available": true,
     "totals": {
-        "views": 149,
-        "scroll_25": 103,
-        "scroll_50": 77,
-        "scroll_75": 51,
-        "scroll_100": 25,
-        "clicks": 24,
+        "views": 135,
+        "scroll_25": 95,
+        "scroll_50": 71,
+        "scroll_75": 47,
+        "scroll_100": 23,
+        "clicks": 21,
         "leads": 0,
-        "time_events": 92,
-        "avg_session_duration_sec": 123
+        "time_events": 84,
+        "avg_session_duration_sec": 130
     },
     "ab_test": {
         "A": {
-            "views": 72,
+            "views": 64,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 9,
+            "clicks": 7,
             "leads": 0,
-            "time_events": 44
+            "time_events": 39
         },
         "B": {
-            "views": 77,
+            "views": 71,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 15,
+            "clicks": 14,
             "leads": 0,
-            "time_events": 48
+            "time_events": 45
         }
     },
     "channels": [
         {
             "source": "linkedin / social",
-            "users": 60
+            "users": 54
         },
         {
             "source": "kakaotalk / bizmessage",
@@ -52,14 +52,6 @@
             "users": 18
         },
         {
-            "source": "(direct) / (none)",
-            "users": 6
-        },
-        {
-            "source": "instagram / story",
-            "users": 5
-        },
-        {
             "source": "kakaotalk / message",
             "users": 5
         },
@@ -72,24 +64,32 @@
             "users": 5
         },
         {
-            "source": "linkedin / massage",
+            "source": "(direct) / (none)",
             "users": 4
+        },
+        {
+            "source": "instagram / story",
+            "users": 3
         },
         {
             "source": "linkedin / newsletter",
             "users": 3
         },
         {
-            "source": "thread / social",
-            "users": 3
-        },
-        {
-            "source": "blind / promo",
+            "source": "linkedin / massage",
             "users": 2
         },
         {
             "source": "okky / promo",
             "users": 2
+        },
+        {
+            "source": "thread / social",
+            "users": 2
+        },
+        {
+            "source": "blind / promo",
+            "users": 1
         },
         {
             "source": "linkedin / direct_message",
