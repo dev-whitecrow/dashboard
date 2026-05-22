@@ -1,82 +1,70 @@
 {
-    "last_updated": "2026-05-21T02:08:10.423123",
+    "last_updated": "2026-05-22T02:10:37.563597",
     "ab_available": true,
     "totals": {
-        "views": 106,
-        "scroll_25": 75,
-        "scroll_50": 56,
-        "scroll_75": 37,
-        "scroll_100": 18,
-        "clicks": 15,
+        "views": 66,
+        "scroll_25": 47,
+        "scroll_50": 35,
+        "scroll_75": 23,
+        "scroll_100": 11,
+        "clicks": 6,
         "leads": 0,
-        "time_events": 64,
-        "avg_session_duration_sec": 127
+        "time_events": 38,
+        "avg_session_duration_sec": 178
     },
     "ab_test": {
         "A": {
-            "views": 50,
+            "views": 29,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 4,
+            "clicks": 1,
             "leads": 0,
-            "time_events": 28
+            "time_events": 17
         },
         "B": {
-            "views": 56,
+            "views": 37,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 11,
+            "clicks": 5,
             "leads": 0,
-            "time_events": 36
+            "time_events": 21
         }
     },
     "channels": [
         {
             "source": "linkedin / social",
-            "users": 51
+            "users": 36
         },
         {
             "source": "instagram / social",
-            "users": 16
-        },
-        {
-            "source": "kakaotalk / bizmessage",
-            "users": 10
-        },
-        {
-            "source": "eo / newsletter",
             "users": 9
         },
         {
-            "source": "newsletter / eo",
-            "users": 5
-        },
-        {
-            "source": "newsletter / maily",
-            "users": 5
+            "source": "kakaotalk / bizmessage",
+            "users": 9
         },
         {
             "source": "(direct) / (none)",
             "users": 4
         },
         {
-            "source": "kakaotalk / message",
+            "source": "eo / newsletter",
             "users": 4
         },
         {
-            "source": "linkedin / newsletter",
+            "source": "kakaotalk / message",
             "users": 3
         },
         {
-            "source": "okky / promo",
+            "source": "newsletter / eo",
             "users": 2
         },
         {
-            "source": "thread / social",
+            "source": "okky / promo",
             "users": 2
         },
         {
@@ -84,19 +72,15 @@
             "users": 1
         },
         {
-            "source": "linkedin / direct_message",
-            "users": 1
-        },
-        {
-            "source": "message / message",
-            "users": 1
-        },
-        {
-            "source": "remember / promo",
+            "source": "newsletter / maily",
             "users": 1
         },
         {
             "source": "shalomic / community",
+            "users": 1
+        },
+        {
+            "source": "thread / social",
             "users": 1
         },
         {
