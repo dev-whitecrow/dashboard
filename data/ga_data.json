@@ -1,58 +1,54 @@
 {
-    "last_updated": "2026-05-22T02:10:37.563597",
+    "last_updated": "2026-05-23T01:58:41.085213",
     "ab_available": true,
     "totals": {
-        "views": 66,
-        "scroll_25": 47,
-        "scroll_50": 35,
-        "scroll_75": 23,
-        "scroll_100": 11,
-        "clicks": 6,
+        "views": 50,
+        "scroll_25": 34,
+        "scroll_50": 25,
+        "scroll_75": 17,
+        "scroll_100": 8,
+        "clicks": 2,
         "leads": 0,
-        "time_events": 38,
-        "avg_session_duration_sec": 178
+        "time_events": 27,
+        "avg_session_duration_sec": 212
     },
     "ab_test": {
         "A": {
+            "views": 21,
+            "scroll_25": 0,
+            "scroll_50": 0,
+            "scroll_75": 0,
+            "scroll_100": 0,
+            "clicks": 0,
+            "leads": 0,
+            "time_events": 11
+        },
+        "B": {
             "views": 29,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 1,
+            "clicks": 2,
             "leads": 0,
-            "time_events": 17
-        },
-        "B": {
-            "views": 37,
-            "scroll_25": 0,
-            "scroll_50": 0,
-            "scroll_75": 0,
-            "scroll_100": 0,
-            "clicks": 5,
-            "leads": 0,
-            "time_events": 21
+            "time_events": 16
         }
     },
     "channels": [
         {
             "source": "linkedin / social",
-            "users": 36
+            "users": 29
         },
         {
             "source": "instagram / social",
-            "users": 9
+            "users": 8
         },
         {
             "source": "kakaotalk / bizmessage",
-            "users": 9
+            "users": 5
         },
         {
             "source": "(direct) / (none)",
-            "users": 4
-        },
-        {
-            "source": "eo / newsletter",
             "users": 4
         },
         {
@@ -60,11 +56,7 @@
             "users": 3
         },
         {
-            "source": "newsletter / eo",
-            "users": 2
-        },
-        {
-            "source": "okky / promo",
+            "source": "eo / newsletter",
             "users": 2
         },
         {
@@ -72,15 +64,19 @@
             "users": 1
         },
         {
+            "source": "newsletter / eo",
+            "users": 1
+        },
+        {
             "source": "newsletter / maily",
             "users": 1
         },
         {
-            "source": "shalomic / community",
+            "source": "okky / promo",
             "users": 1
         },
         {
-            "source": "thread / social",
+            "source": "shalomic / community",
             "users": 1
         },
         {
