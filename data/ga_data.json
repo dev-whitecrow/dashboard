@@ -1,59 +1,47 @@
 {
-    "last_updated": "2026-05-25T02:15:05.180306",
+    "last_updated": "2026-05-26T02:05:58.273085",
     "ab_available": true,
     "totals": {
-        "views": 43,
-        "scroll_25": 29,
-        "scroll_50": 21,
-        "scroll_75": 14,
-        "scroll_100": 7,
-        "clicks": 2,
+        "views": 31,
+        "scroll_25": 22,
+        "scroll_50": 16,
+        "scroll_75": 11,
+        "scroll_100": 5,
+        "clicks": 0,
         "leads": 0,
-        "time_events": 22,
-        "avg_session_duration_sec": 192
+        "time_events": 18,
+        "avg_session_duration_sec": 159
     },
     "ab_test": {
         "A": {
-            "views": 21,
+            "views": 17,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 0,
             "leads": 0,
-            "time_events": 11
+            "time_events": 9
         },
         "B": {
-            "views": 22,
+            "views": 14,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 2,
+            "clicks": 0,
             "leads": 0,
-            "time_events": 11
+            "time_events": 9
         }
     },
     "channels": [
         {
             "source": "linkedin / social",
-            "users": 29
+            "users": 20
         },
         {
             "source": "instagram / social",
             "users": 7
-        },
-        {
-            "source": "(direct) / (none)",
-            "users": 2
-        },
-        {
-            "source": "kakaotalk / bizmessage",
-            "users": 2
-        },
-        {
-            "source": "kakaotalk / message",
-            "users": 2
         },
         {
             "source": "blind / promo",
@@ -64,7 +52,7 @@
             "users": 1
         },
         {
-            "source": "newsletter / maily",
+            "source": "kakaotalk / message",
             "users": 1
         },
         {
@@ -73,6 +61,10 @@
         },
         {
             "source": "shalomic / community",
+            "users": 1
+        },
+        {
+            "source": "thread / social",
             "users": 1
         },
         {
