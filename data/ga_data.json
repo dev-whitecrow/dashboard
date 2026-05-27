@@ -1,58 +1,62 @@
 {
-    "last_updated": "2026-05-26T02:05:58.273085",
+    "last_updated": "2026-05-27T02:13:14.763042",
     "ab_available": true,
     "totals": {
-        "views": 31,
-        "scroll_25": 22,
-        "scroll_50": 16,
-        "scroll_75": 11,
+        "views": 28,
+        "scroll_25": 21,
+        "scroll_50": 15,
+        "scroll_75": 10,
         "scroll_100": 5,
         "clicks": 0,
         "leads": 0,
-        "time_events": 18,
-        "avg_session_duration_sec": 159
+        "time_events": 16,
+        "avg_session_duration_sec": 429
     },
     "ab_test": {
         "A": {
-            "views": 17,
+            "views": 15,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 0,
             "leads": 0,
-            "time_events": 9
+            "time_events": 8
         },
         "B": {
-            "views": 14,
+            "views": 13,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 0,
             "leads": 0,
-            "time_events": 9
+            "time_events": 8
         }
     },
     "channels": [
         {
             "source": "linkedin / social",
-            "users": 20
+            "users": 18
         },
         {
             "source": "instagram / social",
-            "users": 7
+            "users": 5
+        },
+        {
+            "source": "thread / social",
+            "users": 3
         },
         {
             "source": "blind / promo",
             "users": 1
         },
         {
-            "source": "eo / newsletter",
+            "source": "kakaotalk / message",
             "users": 1
         },
         {
-            "source": "kakaotalk / message",
+            "source": "maily / newsletter",
             "users": 1
         },
         {
@@ -61,10 +65,6 @@
         },
         {
             "source": "shalomic / community",
-            "users": 1
-        },
-        {
-            "source": "thread / social",
             "users": 1
         },
         {
