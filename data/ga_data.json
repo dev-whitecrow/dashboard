@@ -1,20 +1,20 @@
 {
-    "last_updated": "2026-05-27T02:13:14.763042",
+    "last_updated": "2026-05-28T01:57:24.330946",
     "ab_available": true,
     "totals": {
-        "views": 28,
-        "scroll_25": 21,
-        "scroll_50": 15,
-        "scroll_75": 10,
-        "scroll_100": 5,
+        "views": 26,
+        "scroll_25": 19,
+        "scroll_50": 14,
+        "scroll_75": 9,
+        "scroll_100": 4,
         "clicks": 0,
         "leads": 0,
         "time_events": 16,
-        "avg_session_duration_sec": 429
+        "avg_session_duration_sec": 470
     },
     "ab_test": {
         "A": {
-            "views": 15,
+            "views": 14,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
@@ -24,7 +24,7 @@
             "time_events": 8
         },
         "B": {
-            "views": 13,
+            "views": 12,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
@@ -37,15 +37,15 @@
     "channels": [
         {
             "source": "linkedin / social",
-            "users": 18
+            "users": 16
         },
         {
             "source": "instagram / social",
-            "users": 5
+            "users": 4
         },
         {
             "source": "thread / social",
-            "users": 3
+            "users": 4
         },
         {
             "source": "blind / promo",
@@ -61,10 +61,6 @@
         },
         {
             "source": "okky / promo",
-            "users": 1
-        },
-        {
-            "source": "shalomic / community",
             "users": 1
         },
         {
