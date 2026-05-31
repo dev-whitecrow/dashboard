@@ -1,20 +1,20 @@
 {
-    "last_updated": "2026-05-30T01:59:23.867094",
+    "last_updated": "2026-05-31T02:15:21.909540",
     "ab_available": true,
     "totals": {
-        "views": 25,
+        "views": 26,
         "scroll_25": 19,
         "scroll_50": 14,
         "scroll_75": 9,
         "scroll_100": 4,
         "clicks": 1,
         "leads": 0,
-        "time_events": 16,
-        "avg_session_duration_sec": 493
+        "time_events": 15,
+        "avg_session_duration_sec": 483
     },
     "ab_test": {
         "A": {
-            "views": 13,
+            "views": 14,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
@@ -31,7 +31,7 @@
             "scroll_100": 0,
             "clicks": 1,
             "leads": 0,
-            "time_events": 9
+            "time_events": 8
         }
     },
     "channels": [
@@ -57,6 +57,10 @@
         },
         {
             "source": "message / modoo",
+            "users": 1
+        },
+        {
+            "source": "remember / promo",
             "users": 1
         },
         {
