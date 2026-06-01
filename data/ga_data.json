@@ -1,27 +1,27 @@
 {
-    "last_updated": "2026-05-31T02:15:21.909540",
+    "last_updated": "2026-06-01T02:36:33.603557",
     "ab_available": true,
     "totals": {
-        "views": 26,
-        "scroll_25": 19,
-        "scroll_50": 14,
+        "views": 25,
+        "scroll_25": 18,
+        "scroll_50": 13,
         "scroll_75": 9,
         "scroll_100": 4,
         "clicks": 1,
         "leads": 0,
-        "time_events": 15,
-        "avg_session_duration_sec": 483
+        "time_events": 14,
+        "avg_session_duration_sec": 496
     },
     "ab_test": {
         "A": {
-            "views": 14,
+            "views": 13,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 0,
             "leads": 0,
-            "time_events": 7
+            "time_events": 6
         },
         "B": {
             "views": 12,
@@ -45,7 +45,7 @@
         },
         {
             "source": "instagram / social",
-            "users": 3
+            "users": 2
         },
         {
             "source": "kakaotalk / message",
