@@ -1,27 +1,27 @@
 {
-    "last_updated": "2026-06-03T02:42:49.263379",
+    "last_updated": "2026-06-04T02:37:02.296751",
     "ab_available": true,
     "totals": {
-        "views": 21,
+        "views": 19,
         "scroll_25": 14,
         "scroll_50": 10,
         "scroll_75": 7,
         "scroll_100": 3,
         "clicks": 1,
         "leads": 0,
-        "time_events": 13,
-        "avg_session_duration_sec": 591
+        "time_events": 11,
+        "avg_session_duration_sec": 629
     },
     "ab_test": {
         "A": {
-            "views": 10,
+            "views": 8,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 0,
             "leads": 0,
-            "time_events": 5
+            "time_events": 3
         },
         "B": {
             "views": 11,
@@ -44,10 +44,6 @@
             "users": 4
         },
         {
-            "source": "instagram / social",
-            "users": 1
-        },
-        {
             "source": "kakaotalk / message",
             "users": 1
         },
@@ -65,10 +61,6 @@
         },
         {
             "source": "shalomic / community",
-            "users": 1
-        },
-        {
-            "source": "youtube / social",
             "users": 1
         }
     ]
