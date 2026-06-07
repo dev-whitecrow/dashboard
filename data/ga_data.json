@@ -1,20 +1,20 @@
 {
-    "last_updated": "2026-06-06T02:03:58.072053",
+    "last_updated": "2026-06-07T02:31:02.836613",
     "ab_available": true,
     "totals": {
-        "views": 18,
-        "scroll_25": 13,
+        "views": 17,
+        "scroll_25": 12,
         "scroll_50": 9,
         "scroll_75": 6,
         "scroll_100": 3,
         "clicks": 1,
         "leads": 0,
         "time_events": 9,
-        "avg_session_duration_sec": 591
+        "avg_session_duration_sec": 618
     },
     "ab_test": {
         "A": {
-            "views": 8,
+            "views": 7,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
@@ -37,7 +37,7 @@
     "channels": [
         {
             "source": "linkedin / social",
-            "users": 11
+            "users": 10
         },
         {
             "source": "thread / social",
