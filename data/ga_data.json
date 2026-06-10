@@ -1,20 +1,20 @@
 {
-    "last_updated": "2026-06-09T01:59:38.672285",
+    "last_updated": "2026-06-10T02:12:36.077801",
     "ab_available": true,
     "totals": {
-        "views": 14,
-        "scroll_25": 11,
-        "scroll_50": 8,
-        "scroll_75": 5,
+        "views": 12,
+        "scroll_25": 9,
+        "scroll_50": 6,
+        "scroll_75": 4,
         "scroll_100": 2,
         "clicks": 1,
         "leads": 0,
-        "time_events": 9,
-        "avg_session_duration_sec": 728
+        "time_events": 7,
+        "avg_session_duration_sec": 98
     },
     "ab_test": {
         "A": {
-            "views": 6,
+            "views": 7,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
@@ -24,24 +24,20 @@
             "time_events": 3
         },
         "B": {
-            "views": 8,
+            "views": 5,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 1,
             "leads": 0,
-            "time_events": 6
+            "time_events": 4
         }
     },
     "channels": [
         {
             "source": "linkedin / social",
-            "users": 8
-        },
-        {
-            "source": "thread / social",
-            "users": 4
+            "users": 6
         },
         {
             "source": "maily / newsletter",
@@ -57,6 +53,14 @@
         },
         {
             "source": "shalomic / community",
+            "users": 1
+        },
+        {
+            "source": "thread / social",
+            "users": 1
+        },
+        {
+            "source": "youtube / social",
             "users": 1
         }
     ]
