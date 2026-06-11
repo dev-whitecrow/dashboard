@@ -1,47 +1,43 @@
 {
-    "last_updated": "2026-06-10T02:12:36.077801",
+    "last_updated": "2026-06-11T02:35:24.931831",
     "ab_available": true,
     "totals": {
-        "views": 12,
-        "scroll_25": 9,
+        "views": 10,
+        "scroll_25": 8,
         "scroll_50": 6,
         "scroll_75": 4,
         "scroll_100": 2,
         "clicks": 1,
         "leads": 0,
-        "time_events": 7,
-        "avg_session_duration_sec": 98
+        "time_events": 5,
+        "avg_session_duration_sec": 112
     },
     "ab_test": {
         "A": {
-            "views": 7,
+            "views": 6,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 0,
             "leads": 0,
-            "time_events": 3
+            "time_events": 2
         },
         "B": {
-            "views": 5,
+            "views": 4,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 1,
             "leads": 0,
-            "time_events": 4
+            "time_events": 3
         }
     },
     "channels": [
         {
             "source": "linkedin / social",
             "users": 6
-        },
-        {
-            "source": "maily / newsletter",
-            "users": 1
         },
         {
             "source": "message / modoo",
@@ -53,10 +49,6 @@
         },
         {
             "source": "shalomic / community",
-            "users": 1
-        },
-        {
-            "source": "thread / social",
             "users": 1
         },
         {
