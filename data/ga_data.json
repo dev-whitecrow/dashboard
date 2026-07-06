@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-07-05T01:58:32.244765",
+    "last_updated": "2026-07-06T02:04:27.019823",
     "ab_available": true,
     "totals": {
         "views": 5,
@@ -10,7 +10,7 @@
         "clicks": 1,
         "leads": 0,
         "time_events": 5,
-        "avg_session_duration_sec": 148
+        "avg_session_duration_sec": 128
     },
     "ab_test": {
         "A": {
