@@ -1,16 +1,16 @@
 {
-    "last_updated": "2026-07-14T01:21:26.961735",
+    "last_updated": "2026-07-15T01:18:12.691213",
     "ab_available": true,
     "totals": {
-        "views": 8,
+        "views": 7,
         "scroll_25": 7,
         "scroll_50": 5,
         "scroll_75": 3,
         "scroll_100": 1,
         "clicks": 3,
         "leads": 0,
-        "time_events": 7,
-        "avg_session_duration_sec": 99
+        "time_events": 6,
+        "avg_session_duration_sec": 110
     },
     "ab_test": {
         "A": {
@@ -24,14 +24,14 @@
             "time_events": 2
         },
         "B": {
-            "views": 6,
+            "views": 5,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 3,
             "leads": 0,
-            "time_events": 5
+            "time_events": 4
         }
     },
     "channels": [
@@ -42,10 +42,6 @@
         {
             "source": "youtube / social",
             "users": 2
-        },
-        {
-            "source": "kakaotalk / bizmessage",
-            "users": 1
         },
         {
             "source": "remember / promo",
