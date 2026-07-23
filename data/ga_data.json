@@ -1,20 +1,20 @@
 {
-    "last_updated": "2026-07-22T01:27:47.634290",
+    "last_updated": "2026-07-23T01:46:43.412646",
     "ab_available": true,
     "totals": {
-        "views": 3,
-        "scroll_25": 3,
-        "scroll_50": 2,
-        "scroll_75": 1,
-        "scroll_100": 0,
-        "clicks": 0,
+        "views": 8,
+        "scroll_25": 8,
+        "scroll_50": 6,
+        "scroll_75": 4,
+        "scroll_100": 2,
+        "clicks": 1,
         "leads": 0,
-        "time_events": 2,
-        "avg_session_duration_sec": 648
+        "time_events": 6,
+        "avg_session_duration_sec": 876
     },
     "ab_test": {
         "A": {
-            "views": 1,
+            "views": 2,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
@@ -24,23 +24,31 @@
             "time_events": 1
         },
         "B": {
-            "views": 2,
+            "views": 6,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 0,
+            "clicks": 1,
             "leads": 0,
-            "time_events": 1
+            "time_events": 5
         }
     },
     "channels": [
+        {
+            "source": "remember / promo",
+            "users": 4
+        },
         {
             "source": "linkedin / social",
             "users": 2
         },
         {
             "source": "tally.so / referral",
+            "users": 1
+        },
+        {
+            "source": "youtube / social",
             "users": 1
         }
     ]
