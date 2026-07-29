@@ -1,12 +1,12 @@
 {
-    "last_updated": "2026-07-28T01:27:15.184333",
+    "last_updated": "2026-07-29T01:27:23.345643",
     "ab_available": true,
     "totals": {
         "views": 9,
-        "scroll_25": 9,
-        "scroll_50": 6,
-        "scroll_75": 4,
-        "scroll_100": 2,
+        "scroll_25": 0,
+        "scroll_50": 0,
+        "scroll_75": 0,
+        "scroll_100": 0,
         "clicks": 1,
         "leads": 0,
         "time_events": 8,
