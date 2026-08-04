@@ -1,37 +1,37 @@
 {
-    "last_updated": "2026-08-03T01:46:53.643680",
+    "last_updated": "2026-08-04T01:22:38.406819",
     "ab_available": true,
     "totals": {
-        "views": 11,
+        "views": 9,
         "scroll_25": 2,
         "scroll_50": 0,
         "scroll_75": 0,
         "scroll_100": 0,
         "clicks": 1,
         "leads": 0,
-        "time_events": 9,
-        "avg_session_duration_sec": 692
+        "time_events": 7,
+        "avg_session_duration_sec": 662
     },
     "ab_test": {
         "A": {
-            "views": 4,
+            "views": 3,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 0,
             "leads": 0,
-            "time_events": 3
+            "time_events": 2
         },
         "B": {
-            "views": 7,
+            "views": 6,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 1,
             "leads": 0,
-            "time_events": 6
+            "time_events": 5
         }
     },
     "channels": [
@@ -41,14 +41,10 @@
         },
         {
             "source": "linkedin / social",
-            "users": 3
+            "users": 2
         },
         {
             "source": "kakaotalk / message",
-            "users": 1
-        },
-        {
-            "source": "tally.so / referral",
             "users": 1
         },
         {
