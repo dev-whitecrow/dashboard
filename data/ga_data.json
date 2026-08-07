@@ -1,19 +1,29 @@
 {
-    "last_updated": "2026-08-06T01:25:11.909396",
+    "last_updated": "2026-08-07T02:03:58.079700",
     "ab_available": true,
     "totals": {
-        "views": 5,
+        "views": 2,
         "scroll_25": 2,
         "scroll_50": 0,
         "scroll_75": 0,
         "scroll_100": 0,
         "clicks": 0,
         "leads": 0,
-        "time_events": 4,
-        "avg_session_duration_sec": 285
+        "time_events": 1,
+        "avg_session_duration_sec": 6
     },
     "ab_test": {
         "A": {
+            "views": 0,
+            "scroll_25": 0,
+            "scroll_50": 0,
+            "scroll_75": 0,
+            "scroll_100": 0,
+            "clicks": 0,
+            "leads": 0,
+            "time_events": 0
+        },
+        "B": {
             "views": 2,
             "scroll_25": 0,
             "scroll_50": 0,
@@ -21,30 +31,16 @@
             "scroll_100": 0,
             "clicks": 0,
             "leads": 0,
-            "time_events": 2
-        },
-        "B": {
-            "views": 3,
-            "scroll_25": 0,
-            "scroll_50": 0,
-            "scroll_75": 0,
-            "scroll_100": 0,
-            "clicks": 0,
-            "leads": 0,
-            "time_events": 2
+            "time_events": 1
         }
     },
     "channels": [
         {
             "source": "linkedin / social",
-            "users": 2
+            "users": 1
         },
         {
             "source": "remember / promo",
-            "users": 2
-        },
-        {
-            "source": "kakaotalk / message",
             "users": 1
         }
     ]
