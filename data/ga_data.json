@@ -1,16 +1,16 @@
 {
-    "last_updated": "2026-08-10T00:53:49.503637",
+    "last_updated": "2026-08-11T00:52:55.846651",
     "ab_available": true,
     "totals": {
-        "views": 2,
-        "scroll_25": 2,
+        "views": 4,
+        "scroll_25": 3,
         "scroll_50": 0,
         "scroll_75": 0,
         "scroll_100": 0,
-        "clicks": 0,
+        "clicks": 1,
         "leads": 0,
-        "time_events": 1,
-        "avg_session_duration_sec": 6
+        "time_events": 3,
+        "avg_session_duration_sec": 14
     },
     "ab_test": {
         "A": {
@@ -24,23 +24,27 @@
             "time_events": 0
         },
         "B": {
-            "views": 2,
+            "views": 4,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 0,
+            "clicks": 1,
             "leads": 0,
-            "time_events": 1
+            "time_events": 3
         }
     },
     "channels": [
         {
-            "source": "linkedin / social",
+            "source": "remember / promo",
+            "users": 2
+        },
+        {
+            "source": "blind / promo",
             "users": 1
         },
         {
-            "source": "remember / promo",
+            "source": "linkedin / social",
             "users": 1
         }
     ]
