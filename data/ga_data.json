@@ -1,16 +1,15 @@
 {
-    "last_updated": "2026-08-24T00:37:14.036296",
-    "ab_available": true,
+    "last_updated": "2026-08-25T00:36:33.429575",
+    "ab_available": false,
     "totals": {
-        "views": 2,
-        "scroll_25": 1,
+        "views": 0,
+        "scroll_25": 0,
         "scroll_50": 0,
         "scroll_75": 0,
         "scroll_100": 0,
-        "clicks": 1,
+        "clicks": 0,
         "leads": 0,
-        "time_events": 2,
-        "avg_session_duration_sec": 21
+        "time_events": 0
     },
     "ab_test": {
         "A": {
@@ -24,24 +23,15 @@
             "time_events": 0
         },
         "B": {
-            "views": 2,
+            "views": 0,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 1,
+            "clicks": 0,
             "leads": 0,
-            "time_events": 2
+            "time_events": 0
         }
     },
-    "channels": [
-        {
-            "source": "blind / promo",
-            "users": 1
-        },
-        {
-            "source": "remember / promo",
-            "users": 1
-        }
-    ]
+    "channels": []
 }
