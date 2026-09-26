@@ -1,16 +1,16 @@
 {
-    "last_updated": "2026-09-25T02:21:48.225244",
+    "last_updated": "2026-09-26T02:26:09.272222",
     "ab_available": true,
     "totals": {
-        "views": 1,
-        "scroll_25": 0,
-        "scroll_50": 0,
-        "scroll_75": 0,
-        "scroll_100": 0,
+        "views": 2,
+        "scroll_25": 1,
+        "scroll_50": 1,
+        "scroll_75": 1,
+        "scroll_100": 1,
         "clicks": 0,
         "leads": 0,
-        "time_events": 0,
-        "avg_session_duration_sec": 0
+        "time_events": 1,
+        "avg_session_duration_sec": 4
     },
     "ab_test": {
         "A": {
@@ -24,19 +24,23 @@
             "time_events": 0
         },
         "B": {
-            "views": 0,
+            "views": 1,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 0,
             "leads": 0,
-            "time_events": 0
+            "time_events": 1
         }
     },
     "channels": [
         {
             "source": "eo / newsletter",
+            "users": 1
+        },
+        {
+            "source": "maily / newsletter",
             "users": 1
         }
     ]
