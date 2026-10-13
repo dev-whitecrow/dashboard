@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-12T03:08:18.644081",
+    "last_updated": "2026-10-13T04:24:21.550313",
     "ab_available": true,
     "totals": {
         "views": 3,
@@ -10,7 +10,7 @@
         "clicks": 0,
         "leads": 0,
         "time_events": 3,
-        "avg_session_duration_sec": 244
+        "avg_session_duration_sec": 284
     },
     "ab_test": {
         "A": {
@@ -37,10 +37,6 @@
     "channels": [
         {
             "source": "(direct) / (none)",
-            "users": 1
-        },
-        {
-            "source": "kakaotalk / bizmessage",
             "users": 1
         },
         {
