@@ -1,27 +1,27 @@
 {
-    "last_updated": "2026-11-24T07:29:19.423568",
+    "last_updated": "2026-11-25T05:58:20.255098",
     "ab_available": true,
     "totals": {
-        "views": 5,
+        "views": 6,
         "scroll_25": 2,
         "scroll_50": 2,
         "scroll_75": 2,
         "scroll_100": 1,
         "clicks": 1,
         "leads": 0,
-        "time_events": 1,
-        "avg_session_duration_sec": 26
+        "time_events": 2,
+        "avg_session_duration_sec": 67
     },
     "ab_test": {
         "A": {
-            "views": 3,
+            "views": 4,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
             "clicks": 1,
             "leads": 0,
-            "time_events": 1
+            "time_events": 2
         },
         "B": {
             "views": 2,
@@ -49,6 +49,10 @@
         },
         {
             "source": "okky / promo",
+            "users": 1
+        },
+        {
+            "source": "remember / promo",
             "users": 1
         }
     ]
