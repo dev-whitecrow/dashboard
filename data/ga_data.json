@@ -1,8 +1,8 @@
 {
-    "last_updated": "2026-11-25T05:58:20.255098",
+    "last_updated": "2026-11-26T05:51:33.785856",
     "ab_available": true,
     "totals": {
-        "views": 6,
+        "views": 5,
         "scroll_25": 2,
         "scroll_50": 2,
         "scroll_75": 2,
@@ -10,11 +10,11 @@
         "clicks": 1,
         "leads": 0,
         "time_events": 2,
-        "avg_session_duration_sec": 67
+        "avg_session_duration_sec": 81
     },
     "ab_test": {
         "A": {
-            "views": 4,
+            "views": 3,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
@@ -45,10 +45,6 @@
         },
         {
             "source": "maily / newsletter",
-            "users": 1
-        },
-        {
-            "source": "okky / promo",
             "users": 1
         },
         {
