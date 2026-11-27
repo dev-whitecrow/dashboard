@@ -1,30 +1,30 @@
 {
-    "last_updated": "2026-11-26T05:51:33.785856",
+    "last_updated": "2026-11-27T05:44:46.238555",
     "ab_available": true,
     "totals": {
-        "views": 5,
-        "scroll_25": 2,
-        "scroll_50": 2,
-        "scroll_75": 2,
+        "views": 2,
+        "scroll_25": 1,
+        "scroll_50": 1,
+        "scroll_75": 1,
         "scroll_100": 1,
-        "clicks": 1,
+        "clicks": 0,
         "leads": 0,
         "time_events": 2,
-        "avg_session_duration_sec": 81
+        "avg_session_duration_sec": 246
     },
     "ab_test": {
         "A": {
-            "views": 3,
+            "views": 2,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
             "scroll_100": 0,
-            "clicks": 1,
+            "clicks": 0,
             "leads": 0,
             "time_events": 2
         },
         "B": {
-            "views": 2,
+            "views": 0,
             "scroll_25": 0,
             "scroll_50": 0,
             "scroll_75": 0,
@@ -36,20 +36,8 @@
     },
     "channels": [
         {
-            "source": "kakaotalk / message",
-            "users": 2
-        },
-        {
-            "source": "eo / newsletter",
-            "users": 1
-        },
-        {
-            "source": "maily / newsletter",
-            "users": 1
-        },
-        {
             "source": "remember / promo",
-            "users": 1
+            "users": 2
         }
     ]
 }
